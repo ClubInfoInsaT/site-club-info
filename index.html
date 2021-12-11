@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+
+    <title>Club Info INSA Toulouse</title>
+
+    <meta
+      name="description"
+      content="Bienvenue au Club Info de l'INSA Toulouse."
+    />
+  </head>
+  <body class="light">
+    <div id="main">
+      <!-- Top Nav -->
+      <header>
+        <a href="./">Club Info</a>
+        <nav>
+          <a href="#">Accueil</a>
+          <a href="#location">Nous trouver</a>
+          <a href="#projects">Nos Projets</a>
+          <a href="#team">Bureau</a>
+        </nav>
+      </header>
+
+      <!-- Hero -->
+      <section id="hero">
+        <div class="hero-inner">
+          <div class="hero-content">
+            <h1>Bienvenue au club info de l'INSA Toulouse</h1>
+            <p>
+              Retrouves-nous tous les jeudi de 14h à 18h au GEI 222.
+              Rejoins-nous aussi sur notre serveur Discord !!
+            </p>
+            <div class="hero-actions">
+              <a href="#location">Plus d'info</a>
+              <a href="https://discord.gg/9G8cWyK">Discord</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img
+              alt="logo du club info"
+              src="./logo.png"
+              onclick="toggleMode()"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Location -->
+      <section id="location">
+        <div class="section-header">
+          <h2>Où et quand nous retrouver ?</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div class="section-content">
+          <div class="location-hours">
+            <div class="location-image">
+              <img alt="hero" src="./location.png" />
+            </div>
+            <div class="opening-hours">
+              <h3>Horaires d'ouverture</h3>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>Lun:</td>
+                    <td>Fermé</td>
+                  </tr>
+                  <tr>
+                    <td>Mar:</td>
+                    <td>Fermé</td>
+                  </tr>
+                  <tr>
+                    <td>Mer:</td>
+                    <td>Fermé</td>
+                  </tr>
+                  <tr>
+                    <td>Jeu:</td>
+                    <td>14:00 - 18:00</td>
+                  </tr>
+                  <tr>
+                    <td>Ven:</td>
+                    <td>Fermé</td>
+                  </tr>
+                  <tr>
+                    <td>Sam:</td>
+                    <td>Fermé</td>
+                  </tr>
+                  <tr>
+                    <td>Dim:</td>
+                    <td>Fermé</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects">
+        <div class="section-header">
+          <h2>Nos Projets</h2>
+          <p>
+            Le Club Info propose à tout membre du campus de venir se retrouver
+            le jeudi après-midi au Génie électronique &amp; informatique pour
+            apprendre, partager et développer ensemble ! Vous pouvez venir
+            ponctuellement à une des nombreuses formations proposées au cours de
+            l'année, ou être membre permanent et faire avec nous tout un tas de
+            projets amusant tels que le développement de l’application Campus,
+            la création de jeux vidéos (en 2D ou 3D, de la matrice LED à la VR),
+            des CTFs (challenges de cybersécurité) et bien d'autres encore !
+          </p>
+        </div>
+        <div class="section-content">
+          <div class="grid">
+            <!-- App Campus -->
+            <div class="simple-project">
+              <div>
+                <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M17,19H7V5H17M17,1H7C5.89,1 5,1.89 5,3V21A2,2 0 0,0 7,23H17A2,2 0 0,0 19,21V3C19,1.89 18.1,1 17,1Z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h3>Application Amicale</h3>
+                <p>
+                  Le must-have de tout Insa(l)iens, l'application regroupe tous
+                  les services de l'INSA dans ta poche !!
+                </p>
+              </div>
+            </div>
+
+            <!-- Wikietud -->
+            <div class="simple-project">
+              <div>
+                <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M9 3V18H12V3H9M12 5L16 18L19 17L15 4L12 5M5 5V18H8V5H5M3 19V21H21V19H3Z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h3>WikiEtud</h3>
+                <p>
+                  Toutes les infos dont tu auras besoin pendant ta scolarité
+                  réunies dans un seul et même endroit.
+                </p>
+              </div>
+            </div>
+
+            <!-- LaTeX -->
+            <div class="simple-project">
+              <div>
+                <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M4 4V22H20V24H4C2.9 24 2 23.1 2 22V4H4M15 7H20.5L15 1.5V7M8 0H16L22 6V18C22 19.11 21.11 20 20 20H8C6.89 20 6 19.1 6 18V2C6 .89 6.89 0 8 0M17 16V14H8V16H17M20 12V10H8V12H20Z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h3>Template LaTeX</h3>
+                <p>
+                  Un ensemble de templates en LaTeX pour écrire des rapports
+                  aussi beau que tes polys de cours avec la charte graphique de
+                  l'INSA.
+                </p>
+              </div>
+            </div>
+
+            <!-- Tutorats -->
+            <div class="simple-project">
+              <div>
+                <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M20,17A2,2 0 0,0 22,15V4A2,2 0 0,0 20,2H9.46C9.81,2.61 10,3.3 10,4H20V15H11V17M15,7V9H9V22H7V16H5V22H3V14H1.5V9A2,2 0 0,1 3.5,7H15M8,4A2,2 0 0,1 6,6A2,2 0 0,1 4,4A2,2 0 0,1 6,2A2,2 0 0,1 8,4Z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h3>Tutorats</h3>
+                <p>
+                  Désireux de vouloir partager leurs connaissances, les membres
+                  du club info proposent différents tutorats pour maitriser tous
+                  les outils informatiques dont tu auras besoin.
+                </p>
+              </div>
+            </div>
+
+            <!-- Matrie LED -->
+            <div class="simple-project">
+              <div>
+                <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M2,2H6V4H4V20H6V22H2V2M20,4H18V2H22V22H18V20H20V4M9,5H10V10H11V11H8V10H9V6L8,6.5V5.5L9,5M15,13H16V18H17V19H14V18H15V14L14,14.5V13.5L15,13M9,13C10.1,13 11,14.34 11,16C11,17.66 10.1,19 9,19C7.9,19 7,17.66 7,16C7,14.34 7.9,13 9,13M9,14C8.45,14 8,14.9 8,16C8,17.1 8.45,18 9,18C9.55,18 10,17.1 10,16C10,14.9 9.55,14 9,14M15,5C16.1,5 17,6.34 17,8C17,9.66 16.1,11 15,11C13.9,11 13,9.66 13,8C13,6.34 13.9,5 15,5M15,6C14.45,6 14,6.9 14,8C14,9.1 14.45,10 15,10C15.55,10 16,9.1 16,8C16,6.9 15.55,6 15,6Z"
+                  />
+                </svg>
+              </div>
+
+              <div>
+                <h3>Matrice LED</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+
+            <!-- Prog Web -->
+            <div class="simple-project">
+              <div>
+                <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M12.89,3L14.85,3.4L11.11,21L9.15,20.6L12.89,3M19.59,12L16,8.41V5.58L22.42,12L16,18.41V15.58L19.59,12M1.58,12L8,5.58V8.41L4.41,12L8,15.58V18.41L1.58,12Z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h3>Developpement Web</h3>
+                <p>
+                  Si tu as l'âme d'un UI ou d'un UX designer le club travaille à
+                  refaire son site.
+                </p>
+              </div>
+            </div>
+
+            <!-- VR -->
+            <div class="simple-project">
+              <div>
+                <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M5,3C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3H5M6,9H7.5L8.5,12.43L9.5,9H11L9.25,15H7.75L6,9M13,9H16.5C17.35,9 18,9.65 18,10.5V11.5C18,12.1 17.6,12.65 17.1,12.9L18,15H16.5L15.65,13H14.5V15H13V9M14.5,10.5V11.5H16.5V10.5H14.5Z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h3>Jeux vidéos en VR</h3>
+                <p>
+                  Ayant fait l'acquisition d'un oculus Rift, le club propose de
+                  développer un jeu vidéo en réalité virtuel !
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team -->
+      <section id="team">
+        <div>
+          <div class="section-header">
+            <h2>Le bureau du club</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi
+              tristique senectus et netus et. Risus pretium quam vulputate
+              dignissim suspendisse in est. Nisl nunc mi ipsum faucibus. Congue
+              mauris rhoncus aenean vel elit scelerisque mauris pellentesque.
+            </p>
+          </div>
+          <div class="section-content">
+            <div class="profile">
+              <div class="profile-image">
+                <img
+                  src="https://images.unsplash.com/photo-1517213849290-bbbfffdc6da3?w=200"
+                  loading="lazy"
+                  alt=""
+                />
+              </div>
+
+              <div class="profile-info">
+                <p>Raphaël Lacroix</p>
+                <p>Président</p>
+              </div>
+            </div>
+            <div class="profile">
+              <div class="profile-image">
+                <img
+                  src="https://images.unsplash.com/photo-1517213849290-bbbfffdc6da3?w=200"
+                  loading="lazy"
+                  alt=""
+                />
+              </div>
+
+              <div class="profile-info">
+                <p>Gwenael Robert</p>
+                <p>Vice-Président</p>
+              </div>
+            </div>
+            <div class="profile">
+              <div class="profile-image">
+                <img
+                  src="https://images.unsplash.com/photo-1517213849290-bbbfffdc6da3?w=200"
+                  loading="lazy"
+                  alt=""
+                />
+              </div>
+
+              <div class="profile-info">
+                <p>Jean-Yves Saint Loubert</p>
+                <p>Trésorier</p>
+              </div>
+            </div>
+            <div class="profile">
+              <div class="profile-image">
+                <img
+                  src="https://images.unsplash.com/photo-1517213849290-bbbfffdc6da3?w=200"
+                  loading="lazy"
+                  alt=""
+                />
+              </div>
+
+              <div class="profile-info">
+                <p>Gérald Leban</p>
+                <p>Secrétaire</p>
+              </div>
+            </div>
+
+            <div class="profile">
+              <div class="profile-image">
+                <img
+                  src="https://images.unsplash.com/photo-1517213849290-bbbfffdc6da3?w=200"
+                  loading="lazy"
+                  alt=""
+                />
+              </div>
+
+              <div class="profile-info">
+                <p>Aurélia Lejeune</p>
+                <p>Responsable communication</p>
+              </div>
+            </div>
+            <div class="profile">
+              <div class="profile-image">
+                <img
+                  src="https://images.unsplash.com/photo-1517213849290-bbbfffdc6da3?w=200"
+                  loading="lazy"
+                  alt=""
+                />
+              </div>
+
+              <div class="profile-info">
+                <p>Arnaud Vergnet</p>
+                <p>Responsable application amicale</p>
+              </div>
+            </div>
+            <div class="profile">
+              <div class="profile-image">
+                <img
+                  src="https://images.unsplash.com/photo-1517213849290-bbbfffdc6da3?w=200"
+                  loading="lazy"
+                  alt=""
+                />
+              </div>
+
+              <div class="profile-info">
+                <p>Mayeul Gasc</p>
+                <p>Responsable root étudiant</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer-sections">
+          <nav>
+            <a href="#">Accueil</a>
+            <a href="#location">Nous Trouver</a>
+            <a href="#projects">Nos Projets</a>
+            <a href="#team">Bureau</a>
+          </nav>
+
+          <div class="footer-socials">
+            <!-- Mail -->
+            <a
+              href="mailto:club.info@amicale-insat.fr"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Mail
+            </a>
+
+            <!-- LinkedIn -->
+            <a
+              href="https://www.linkedin.com/company/37796301/admin/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>
+
+            <!-- Facebook -->
+            <a
+              href="https://www.facebook.com/ClubInfoINSAT"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Facebook
+            </a>
+
+            <!-- Github -->
+            <a
+              href="https://github.com/orgs/ClubInfoInsaT/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Github
+            </a>
+
+            <!-- Discord -->
+            <a
+              href="https://discord.gg/9G8cWyK"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Discord
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-copyright">2021 - Gérald LEBAN</div>
+      </footer>
+    </div>
+
+    <script>
+      const body = document.querySelector('body');
+      const toggleMode = () => {
+        body.className === 'light'
+          ? (body.className = 'dark')
+          : (body.className = 'light');
+      };
+    </script>
+  </body>
+</html>
