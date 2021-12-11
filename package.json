@@ -1,0 +1,45 @@
+{
+  "name": "club-info-2",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "2.5.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "plugins": [],
+    "extends": [
+      "prettier"
+    ],
+    "rules": {
+      "no-undef": 0,
+      "no-shadow": "off",
+      "prettier/prettier": [
+        "error",
+        {
+          "tabWidth": 2,
+          "useTabs": false,
+          "semi": true,
+          "singleQuote": true,
+          "quoteProps": "consistent",
+          "trailingComma": "es5",
+          "bracketSpacing": true,
+          "bracketSameLine": false,
+          "arrowParens": "always"
+        }
+      ]
+    }
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": true,
+    "quoteProps": "consistent",
+    "trailingComma": "es5",
+    "bracketSpacing": true,
+    "bracketSameLine": false,
+    "arrowParens": "always"
+  }
+}
