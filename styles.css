@@ -1,5 +1,5 @@
 :root {
-  --accent: rgb(77, 223, 159);
+  --accent: rgb(255, 196, 60);
   --radius: 10px;
   --font-small: 0.875rem;
   --font-medium: 1.125rem;
@@ -56,7 +56,7 @@ header {
 header > a {
   font-weight: bolder;
   font-size: var(--font-larger);
-  color: initial;
+  color: inherit;
   flex-shrink: 0;
 }
 
