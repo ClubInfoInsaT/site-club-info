@@ -32,6 +32,11 @@ a {
   text-decoration: none;
 }
 
+section a {
+  color: var(--accent);
+  font-weight: bold;
+}
+
 section {
   padding-top: 10rem;
   padding-bottom: 10rem;
