@@ -33,7 +33,7 @@
         <nav>
           <a href="#">Accueil</a>
           <a href="#location">Nous trouver</a>
-          <a href="#projects">Nos projets</a>
+          <a href="#projects">Nos Projets</a>
           <a href="#team">Qui sommes-nous ?</a>
         </nav>
       </header>
@@ -44,12 +44,12 @@
           <div class="hero-content">
             <h1>Bienvenue au club info de l'INSA Toulouse</h1>
             <p>
-              Retrouves-nous tous les jeudi de 14h à 18h au GEI 222.
-              Rejoins-nous aussi sur notre serveur Discord !!
+              Retrouves-nous tous les jeudi de 14h à 20h à notre local.
+              Rejoins-nous aussi sur notre serveur Discord !
             </p>
             <div class="hero-actions">
               <a href="#location">Plus d'info</a>
-              <a href="fresque/index.html"> Semaine climat énergie </a>
+              <a href="fresque/index.html">Semaine climat énergie</a> <!-- La seule ligne à supprimer après la SCE est celle-ci -->
               <a href="https://discord.gg/9G8cWyK">Discord</a>
             </div>
           </div>
@@ -68,26 +68,16 @@
         <div class="section-header">
           <h2>Où et quand nous retrouver ?</h2>
           <p>
-            Tous les jeudi au
-            <a href="https://www.openstreetmap.org/node/9101715343"
-              ><b>GEI 222</b></a
-            >
-            de 14h à 18h. Vous pouvez aussi nous retrouvez à
-            <a href="https://www.openstreetmap.org/node/5798731642"
-              ><b>notre local</b></a
-            >
-            (Les horaires d'ouverture du local seront bientôt rajoutés)
+            Vous pouvez nous rencontrer à
+            <a href="https://www.openstreetmap.org/node/5798731642"><b>notre local</b></a>.
+            Des permanences sont assurées aux horaires indiqués ci-dessous.
+            D'autres ouvertures occasionnelles sont annoncées sur le <a href="https://discord.gg/9G8cWyK">discord</a>.
           </p>
         </div>
         <div class="section-content">
           <div class="location-hours">
             <div class="location-image">
-              <iframe
-                width="800"
-                height="500"
-                src="https://www.openstreetmap.org/export/embed.html?bbox=1.4659291505813599%2C43.57004342114147%2C1.467871069908142%2C43.57123273784268&amp;layer=mapnik&amp;marker=43.57063808242773%2C1.466900110244751"
-                style="border: 1px solid black"
-              ></iframe>
+              <iframe width="800" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=1.4659291505813599%2C43.57004342114147%2C1.467871069908142%2C43.57123273784268&amp;layer=mapnik&amp;marker=43.57063808242773%2C1.466900110244751" style="border: 1px solid black"></iframe>
             </div>
             <div class="opening-hours">
               <h3>Horaires d'ouverture</h3>
@@ -107,7 +97,7 @@
                   </tr>
                   <tr>
                     <td>Jeu:</td>
-                    <td>14:00 - 18:00</td>
+                    <td>14:00 - 20:00</td>
                   </tr>
                   <tr>
                     <td>Ven:</td>
@@ -131,16 +121,16 @@
       <!-- Projects -->
       <section id="projects">
         <div class="section-header">
-          <h2>Nos projets</h2>
+          <h2>Nos Projets</h2>
           <p>
             Le Club Info propose à tout membre du campus de venir se retrouver
-            le jeudi après-midi au GEI pour apprendre, partager et développer
-            ensemble ! Vous pouvez venir ponctuellement à une des nombreuses
-            formations proposées au cours de l'année, ou être membre permanent
-            et faire avec nous tout un tas de projets amusant tels que le
-            développement de l’application Campus, la création de jeux vidéos
-            (en 2D ou 3D, de la matrice LED à la VR), des CTFs (challenges de
-            cybersécurité) et bien d'autres encore !
+            le jeudi après-midi au Génie Électronique et Informatique pour
+            apprendre, partager et développer ensemble ! Vous pouvez venir
+            ponctuellement à une des nombreuses formations proposées au cours de
+            l'année, ou être membre permanent et faire avec nous tout un tas de
+            projets amusant tels que le développement de l’application Campus,
+            la création de jeux vidéos (en 2D ou 3D, de la matrice LED à la VR),
+            des CTFs (challenges de cybersécurité) et bien d'autres encore !
           </p>
         </div>
         <div class="section-content">
@@ -173,18 +163,35 @@
                 <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
                   <path
                     fill="currentColor"
-                    d="M9 3V18H12V3H9M12 5L16 18L19 17L15 4L12 5M5 5V18H8V5H5M3 19V21H21V19H3Z"
+                    d="M13,19H14A1,1 0 0,1 15,20H22V22H15A1,1 0 0,1 14,23H10A1,1 0 0,1 9,22H2V20H9A1,1 0 0,1 10,19H11V17H4A1,1 0 0,1 3,16V12A1,1 0 0,1 4,11H20A1,1 0 0,1 21,12V16A1,1 0 0,1 20,17H13V19M4,3H20A1,1 0 0,1 21,4V8A1,1 0 0,1 20,9H4A1,1 0 0,1 3,8V4A1,1 0 0,1 4,3M9,7H10V5H9V7M9,15H10V13H9V15M5,5V7H7V5H5M5,13V15H7V13H5Z"
                   />
                 </svg>
               </div>
               <div>
-                <h3 class="project-name">WikiEtud</h3>
+                <h3 class="project-name">Services Web</h3>
                 <p class="project-description">
-                  Toutes les infos dont tu auras besoin pendant ta scolarité
-                  réunies dans
-                  <a href="https://wiki.etud.insa-toulouse.fr/"
-                    >un seul et même endroit</a
-                  >.
+                  Le Club met à disposition des étudiants un ensemble de services, répertorié sur le site
+                  <a href="https://etud.insa-toulouse.fr/">Etud</a>.
+                </p>
+              </div>
+            </div>
+
+            <!-- Tutorats -->
+            <div class="simple-project">
+              <div>
+                <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M20,17A2,2 0 0,0 22,15V4A2,2 0 0,0 20,2H9.46C9.81,2.61 10,3.3 10,4H20V15H11V17M15,7V9H9V22H7V16H5V22H3V14H1.5V9A2,2 0 0,1 3.5,7H15M8,4A2,2 0 0,1 6,6A2,2 0 0,1 4,4A2,2 0 0,1 6,2A2,2 0 0,1 8,4Z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h3 class="project-name">Tutorats</h3>
+                <p class="project-description">
+                  Désireux de vouloir partager leurs connaissances, les membres
+                  du club info proposent différents tutorats pour maîtriser tous
+                  les outils informatiques dont tu auras besoin pour les cours.
                 </p>
               </div>
             </div>
@@ -207,28 +214,8 @@
                     href="https://github.com/ClubInfoInsaT/latex-templates-insa-toulouse"
                     >ensemble de templates en LaTeX</a
                   >
-                  pour écrire des rapports aussi beau que tes polys de cours
+                  pour écrire des rapports aussi beaux que tes polys de cours
                   avec la charte graphique de l'INSA.
-                </p>
-              </div>
-            </div>
-
-            <!-- Tutorats -->
-            <div class="simple-project">
-              <div>
-                <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
-                  <path
-                    fill="currentColor"
-                    d="M20,17A2,2 0 0,0 22,15V4A2,2 0 0,0 20,2H9.46C9.81,2.61 10,3.3 10,4H20V15H11V17M15,7V9H9V22H7V16H5V22H3V14H1.5V9A2,2 0 0,1 3.5,7H15M8,4A2,2 0 0,1 6,6A2,2 0 0,1 4,4A2,2 0 0,1 6,2A2,2 0 0,1 8,4Z"
-                  />
-                </svg>
-              </div>
-              <div>
-                <h3 class="project-name">Tutorats</h3>
-                <p class="project-description">
-                  Désireux de vouloir partager leurs connaissances, les membres
-                  du club info proposent différents tutorats pour maitriser tous
-                  les outils informatiques dont tu auras besoin pour les cours.
                 </p>
               </div>
             </div>
@@ -272,7 +259,7 @@
                 </svg>
               </div>
               <div>
-                <h3 class="project-name">Developpement Web</h3>
+                <h3 class="project-name">Développement Web</h3>
                 <p class="project-description">
                   Si tu as l'âme d'un UI ou d'un UX designer, le club travaille
                   à refaire
@@ -310,41 +297,27 @@
         <div>
           <div class="section-header">
             <h2>Qui sommes-nous ?</h2>
-            <p>
-              Élèves-ingénieurs de l'INSA Toulouse passionnés par l'informatique
-              et les nouvelles technologies, on se réunit régulièrement pour
-              travailler sur des projets communs et proposer notre aide aux
-              étudiants.
-            </p>
           </div>
-          <div class="section-content">
-            <h3>Le bureau du club</h3>
-            <ul>
-              <li><b>Président</b> : Raphaël Lacroix</li>
-              <li><b>Vice-président</b> : Gwenael Robert</li>
-              <li><b>Trésorier</b> : Jean-Yves Saint Loubert</li>
-              <li><b>Secrétaire</b> : Gérald Leban</li>
-              <li><b>Responsable communication</b> : Aurélia Lejeune</li>
-              <li><b>Responsable roots étudiants</b> : Mayeul Gasc</li>
-              <li><b>Responsable application amicale</b> : Paul Alnet</li>
-            </ul>
 
-            <h3>Contact</h3>
-            <p>
-              Vous pouvez nous contacter via
-              <a href="mailto:club.info@amicale-insat.fr"
-                >club.info@amicale-insat.fr</a
-              >
-              ou bien via notre
-              <a href="https://discord.gg/9G8cWyK">discord</a>.
-            </p>
-            <p>
-              Pour ce qui concerne les services proposés par le Club (y compris
-              ce site), merci d'utiliser l'adresse
-              <a href="mailto:root@etud.insa-toulouse.fr"
-                >root@etud.insa-toulouse.fr</a
-              >.
-            </p>
+          <p>
+            Élèves-ingénieurs de l'INSA Toulouse passionnés par l'informatique et les nouvelles technologies, on se réunit régulièrement pour travailler sur des projets communs et proposer notre aide aux étudiants.
+          </p>
+
+          <h3>Le bureau du club</h3>
+          <ul>
+            <li><b>Président</b> : Raphaël Lacroix</li>
+            <li><b>Vice-président</b> : Gwenael Robert</li>
+            <li><b>Trésorier</b> : Jean-Yves Saint Loubert</li>
+            <li><b>Secrétaire</b> : Gérald Leban</li>
+            <li><b>Responsable communication</b> : Aurélia Lejeune</li>
+            <li><b>Responsable roots étudiants</b> : Mayeul Gasc</li>
+            <li><b>Responsable application amicale</b> : Paul Alnet</li>
+          </ul>
+
+          <h3>Contact</h3>
+          <p>Vous pouvez nous contacter via <a href="mailto:club.info@amicale-insat.fr">club.info@amicale-insat.fr</a> ou bien via notre <a href="https://discord.gg/9G8cWyK">discord</a>.</p>
+          <p>Pour ce qui concerne les services proposés par le Club (y compris ce site), merci d'utiliser l'adresse <a href="mailto:root@etud.insa-toulouse.fr">root@etud.insa-toulouse.fr</a>.</p>
+
           </div>
         </div>
       </section>
@@ -354,8 +327,8 @@
         <div class="footer-sections">
           <nav>
             <a href="#">Accueil</a>
-            <a href="#location">Nous trouver</a>
-            <a href="#projects">Nos projets</a>
+            <a href="#location">Nous Trouver</a>
+            <a href="#projects">Nos Projets</a>
             <a href="#team">Qui sommes-nous ?</a>
           </nav>
 

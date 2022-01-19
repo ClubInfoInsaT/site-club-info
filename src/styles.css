@@ -132,11 +132,16 @@ header > nav > a:active {
   background-color: var(--accent);
 }
 
-.hero-actions > a:not(a:first-child) {
+.hero-actions > a:nth-child(2) {
+  color: white;
+  background-color: green;
+}
+
+.hero-actions > a:not(a:first-child):not(a:nth-child(2)) {
   background-color: var(--light-gray);
 }
 
-.hero-actions > a:not(a:first-child):hover {
+.hero-actions > a:not(a:first-child):not(a:nth-child(2)):hover {
   background-color: var(--gray);
 }
 
@@ -191,6 +196,20 @@ header > nav > a:active {
   object-position: center;
   border-radius: 0.5rem;
   width: 75%;
+}
+
+.fresque {
+  margin-bottom: 2.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.fresque > img {
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.5rem;
+  width: 60%;
 }
 
 .opening-hours {
@@ -263,12 +282,6 @@ header > nav > a:active {
 
 .simple-project > div:last-child {
   margin-left: 10px;
-  margin-right: 10px;
-}
-
-#team .section-content {
-  display: block;
-  justify-content: initial;
 }
 
 /* Footer */
@@ -425,10 +438,6 @@ header > nav > a:active {
 
 /* Smartphone */
 @media (max-width: 640px) {
-  .hero-actions > a {
-    margin-right: 0;
-  }
-
   .grid {
     grid-template-columns: 1fr;
   }
@@ -437,24 +446,4 @@ header > nav > a:active {
     padding-left: 0;
     padding-right: 0;
   }
-}
-
-/* Semaine Climat Energie */
-.fresque {
-  margin-bottom: 2.5rem;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.fresque > img {
-  object-fit: cover;
-  object-position: center;
-  border-radius: 0.5rem;
-  width: 60%;
-}
-
-.hero-actions > a:nth-child(2) {
-  color: white !important;
-  background-color: green !important;
 }
