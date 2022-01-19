@@ -263,6 +263,12 @@ header > nav > a:active {
 
 .simple-project > div:last-child {
   margin-left: 10px;
+  margin-right: 10px;
+}
+
+#team .section-content {
+  display: block;
+  justify-content: initial;
 }
 
 /* Footer */
@@ -419,6 +425,10 @@ header > nav > a:active {
 
 /* Smartphone */
 @media (max-width: 640px) {
+  .hero-actions > a {
+    margin-right: 0;
+  }
+
   .grid {
     grid-template-columns: 1fr;
   }
@@ -427,4 +437,24 @@ header > nav > a:active {
     padding-left: 0;
     padding-right: 0;
   }
+}
+
+/* Semaine Climat Energie */
+.fresque {
+  margin-bottom: 2.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.fresque > img {
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.5rem;
+  width: 60%;
+}
+
+.hero-actions > a:nth-child(2) {
+  color: white !important;
+  background-color: green !important;
 }
