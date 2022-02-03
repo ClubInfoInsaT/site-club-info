@@ -134,7 +134,7 @@ header > nav > a:active {
 
 .hero-actions > a:nth-child(2) {
   color: white;
-  background-color: green;
+  background-color: #007bff;
 }
 
 .hero-actions > a:not(a:first-child):not(a:nth-child(2)) {
