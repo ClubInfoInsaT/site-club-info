@@ -212,6 +212,20 @@ header > nav > a:active {
   width: 60%;
 }
 
+.lan {
+  margin-bottom: 2.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.lan > img {
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
 .opening-hours {
   display: flex;
   flex-direction: column;
