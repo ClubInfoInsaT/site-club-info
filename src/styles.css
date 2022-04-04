@@ -134,7 +134,8 @@ header > nav > a:active {
 
 .hero-actions > a:nth-child(2) {
   color: white;
-  background-color: #007bff;
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
 }
 
 .hero-actions > a:not(a:first-child):not(a:nth-child(2)) {
