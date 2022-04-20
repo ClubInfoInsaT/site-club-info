@@ -138,13 +138,26 @@ header > nav > a:active {
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
 }
 
-.hero-actions > a:not(a:first-child):not(a:nth-child(2)) {
-  background-color: var(--light-gray);
+.hero-actions > a:nth-child(3) {
+  color: white;
+  background-color: #292841;
 }
 
-.hero-actions > a:not(a:first-child):not(a:nth-child(2)):hover {
-  background-color: var(--gray);
+.hero-actions > a:nth-child(3):hover {
+  color: white;
+  background-color: #1C1B29;
 }
+
+.hero-actions > a:last-child {
+  color: white !important;
+  background-color: #84355F;
+}
+
+.hero-actions > a:last-child:hover {
+  color: white !important;
+  background-color: #AA447A;
+}
+
 
 .hero-actions > a:last-child,
 .hero-actions > a:last-child:visited {
