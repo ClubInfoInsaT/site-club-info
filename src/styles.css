@@ -16,7 +16,7 @@ body.light {
 body.dark {
   --light-gray: rgb(31, 41, 55);
   --gray: rgb(55, 65, 81);
-  background-color: rgb(17, 24, 39);
+  background-color: rgb(36, 37, 38);
   color: white;
 }
 
