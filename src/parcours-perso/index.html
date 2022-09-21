@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../styles.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+
+    <title>Club Info INSA Toulouse</title>
+
+    <meta
+      name="description"
+      content="Bienvenue au Club Info de l'INSA Toulouse."
+    />
+    <style>
+      .parcours {
+        border-radius: 20px;
+        padding: 20px;
+      }
+
+      .parcours > h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      .parcours > ul > li {
+        margin-bottom: 5px;
+      }
+
+      .parcours:nth-child(1) {
+        background-color: #86c5c9;
+      }
+
+      .parcours:nth-child(2) {
+        background-color: #f3d1d1;
+      }
+
+      .parcours:nth-child(3) {
+        background-color: #e1a7a7;
+      }
+
+      .parcours:nth-child(4) {
+        background-color: #d2d0ed;
+      }
+
+      .section-content {
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .grid {
+        width: 100%;
+        display: grid;
+        grid-gap: 10px;
+      }
+
+      @media (min-width: 640px) {
+        .grid {
+          grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
+      }
+
+      @media (min-width: 768px) {
+        .grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .grid {
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+      }
+    </style>
+  </head>
+  <body class="light">
+    <div id="main">
+      <!-- Top Nav -->
+      <header>
+        <a href="../">Club Info</a>
+        <nav>
+          <a href="../">Accueil</a>
+          <a href="../#location">Nous trouver</a>
+          <a href="../#projects">Nos Projets</a>
+          <a href="../#team">Qui sommes-nous ?</a>
+          <a href="./">Parcours personalisé</a>
+        </nav>
+      </header>
+
+      <!-- Parcours perso -->
+      <section>
+        <div id="section-header">
+          <h2>Parcours de formation personalisé</h2>
+          <p>
+            Nous créons cette année un tout nouveau projet:
+            <b>les 🎉 parcours de formation personnalisé 🎉</b>. Si vous venez à
+            l'INSA pour faire de l'informatique les premières années risquent de
+            vous décevoir (très peu en 1A, pas grand chose en 2MIC...). Nous
+            avons été à votre place et vous avons concocté 4 parcours de
+            formation abordables pour commencer de votre côté ! Ces formations
+            sont :
+          </p>
+        </div>
+        <div class="section-content">
+          <div class="grid grid-4">
+            <div class="parcours">
+              <h3>Algo</h3>
+              <ul>
+                <li>Résoudre des problèmes</li>
+                <li>Automatiser des tâches</li>
+                <li>Frimer devant M Lebotlan</li>
+              </ul>
+            </div>
+            <div class="parcours">
+              <h3>Web</h3>
+              <ul>
+                <li>Faire son propre site web</li>
+                <li>Mettre ton site en ligne</li>
+                <li>Faire une petite appli/jeu</li>
+              </ul>
+            </div>
+            <div class="parcours">
+              <h3>Jeux Vidéos</h3>
+              <ul>
+                <li>Apprendre C#, Unity</li>
+                <li>Faire ton petit jeu vidéo</li>
+                <li>Participer aux game jams</li>
+              </ul>
+            </div>
+            <div class="parcours">
+              <h3>Hacking</h3>
+              <ul>
+                <li>
+                  Apprendre les bases de linux, du réseau, de la crypto, des OS
+                </li>
+                <li>Commencer à avoir des méthodes</li>
+                <li>Remplir des challenges</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p>
+            - S'amuser en Algo 💻️: La Base de la Base, on part des cours de
+            notre très cher Mr Le Botlan et on continue avec des concepts un peu
+            plus poussés, le tout avec des petits jeux et activités. En un rien
+            de temps vous serez prêts pour les challenges d'algorithmie de
+            Codingame
+          </p>
+          <p>
+            - Commencer en Web 🌐 : faire son propre site web statique, puis le
+            rendre joli et réactif 🙀. Apprendre à le mettre en ligne sur
+            l'espace étudiant que l'INSA vous offre. Peut être que dans quelques
+            années vous rejoindrez de développement du site et de l'application
+            de l'Amicale! - S'initier au jeux vidéo 🎮️: Apprendre le language C
+            sharp et le moteur de jeu Unity, Peut être rejoindre l'équipe du
+            club info qui participera au concours de jeux vidéo de Toulouse
+            début 2023!
+          </p>
+          <p>
+            - Devenir un pro du hacking (éthique) 🕵️: apprendre les bases de la
+            sécurité (nécessite des petites connaissances de base et/ou un pc
+            sous linux mais vous pouvez venir quel que soit votre niveau 😉)
+          </p>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer-sections">
+          <nav>
+            <a href="#">Accueil</a>
+            <a href="#location">Nous Trouver</a>
+            <a href="#projects">Nos Projets</a>
+            <a href="#team">Qui sommes-nous ?</a>
+          </nav>
+
+          <nav>
+            Ressources :
+            <a href="semaine-climat-2022/fresque/index.html">SCE 2022</a>
+            <a href="https://codinsa.org/static/past">Cod'INSA</a>
+            <a
+              href="https://wiki.etud.insa-toulouse.fr/shelves/serveurs-etudiants"
+              >Infrastructures</a
+            >
+          </nav>
+
+          <div class="footer-socials">
+            <!-- Mail -->
+            <a
+              href="mailto:club.info@amicale-insat.fr"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Mail
+            </a>
+
+            <!-- LinkedIn -->
+            <a
+              href="https://www.linkedin.com/company/club-info-insa-toulouse/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>
+
+            <!-- Facebook -->
+            <a
+              href="https://www.facebook.com/ClubInfoINSAT"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Facebook
+            </a>
+
+            <!-- Instagram -->
+            <a
+              href="https://www.instagram.com/clubinfoinsat/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Instagram
+            </a>
+
+            <!-- Github -->
+            <a
+              href="https://github.com/orgs/ClubInfoInsaT/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Github
+            </a>
+
+            <!-- Discord -->
+            <a
+              href="https://discord.gg/9G8cWyK"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Discord
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-copyright">2022 - Club Info INSA Toulouse</div>
+      </footer>
+    </div>
+
+    <script>
+      const body = document.querySelector('body');
+      const toggleMode = () => {
+        body.className === 'light'
+          ? (body.className = 'dark')
+          : (body.className = 'light');
+      };
+    </script>
+  </body>
+</html>
