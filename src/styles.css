@@ -224,6 +224,10 @@ header > nav > a:active {
   width: 75%;
 }
 
+tr > td:nth-child(2) {
+  text-align: right;
+}
+
 .fresque {
   margin-bottom: 2.5rem;
   width: 100%;
