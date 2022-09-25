@@ -114,8 +114,13 @@ header > nav > a:active {
   margin-bottom: 2rem;
 }
 
+.hero-image > img {
+  height: 400px;
+}
+
 .hero-actions {
   display: flex;
+  gap: 1rem;
 }
 
 .hero-actions > a {
@@ -125,7 +130,6 @@ header > nav > a:active {
   text-align: center;
   border-radius: var(--radius);
   padding: 0.75rem 2rem;
-  margin-right: 1rem;
   font-weight: bold;
 }
 
@@ -137,7 +141,14 @@ header > nav > a:active {
 .hero-actions > a:nth-child(2) {
   color: white;
   background: #d6249f;
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
 }
 
 .hero-actions > a:nth-child(3) {
@@ -147,19 +158,18 @@ header > nav > a:active {
 
 .hero-actions > a:nth-child(3):hover {
   color: white;
-  background-color: #1C1B29;
+  background-color: #1c1b29;
 }
 
 .hero-actions > a:last-child {
   color: white !important;
-  background-color: #84355F;
+  background-color: #23272a;
 }
 
 .hero-actions > a:last-child:hover {
   color: white !important;
-  background-color: #AA447A;
+  background-color: #36393f;
 }
-
 
 .hero-actions > a:last-child,
 .hero-actions > a:last-child:visited {
@@ -418,7 +428,6 @@ header > nav > a:active {
   }
 
   .hero-actions > a {
-    margin-top: 1rem;
     color: inherit;
   }
 
@@ -475,5 +484,9 @@ header > nav > a:active {
   .simple-project {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .hero-image > img {
+    display: none;
   }
 }
