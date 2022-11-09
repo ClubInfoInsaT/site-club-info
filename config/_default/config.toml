@@ -1,0 +1,24 @@
+# -- Site Configuration --
+# Refer to the theme docs for more details about each of these parameters.
+# https://nunocoracao.github.io/blowfish/docs/getting-started/
+# baseURL = "/~leban/test-site"
+baseURL                = "/"
+buildDrafts            = false
+buildFuture            = false
+defaultContentLanguage = "fr"
+enableRobotsTXT        = true
+paginate               = 20
+summaryLength          = 30
+theme                  = "blowfish"
+# googleAnalytics = "G-XXXXXXXXX"
+[taxonomies]
+  author   = "authors"
+  category = "categories"
+  series   = "series"
+  tag      = "tags"
+[sitemap]
+  changefreq = 'daily'
+  filename   = 'sitemap.xml'
+  priority   = 0.5
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
