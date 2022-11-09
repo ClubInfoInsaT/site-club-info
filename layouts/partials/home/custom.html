@@ -69,7 +69,23 @@
             {{ end }}
           </div>
           <section class="prose text-neutral-200">
-            {{ .Content }}
+            <a
+              class="
+                !rounded-md
+                bg-primary-600
+                px-4
+                py-2
+                !text-neutral
+                !no-underline
+                hover:!bg-primary-500
+                dark:bg-primary-800 dark:hover:!bg-primary-700
+              "
+              href="https://discord.com/invite/9G8cWyK"
+              target="_blank"
+              role="button"
+            >
+              👉 Rejoins-nous 👈
+            </a>
           </section>
         </div>
       </div>
@@ -77,26 +93,25 @@
   </div>
 </article>
 
-{{/*  <section>{{ partial "intro.html" . }}</section>  */}}
-
 <section>{{ partial "projects.html" . | safeHTML }}</section>
 
-{{/*  Membre du Conseil d'administration  */}}
+{{/* Membre du Conseil d'administration */}}
 <h2 class="mt-8 text-2xl font-extrabold">Conseil d'administration</h2>
-
 
 <section class="prose max-w-full dark:prose-invert">
   <div>
-    <p>Élèves-ingénieurs de l'INSA Toulouse passionnés par l'informatique et les nouvelles technologies, on se réunit régulièrement pour travailler sur des projets communs et proposer notre aide aux étudiants.</p>
+    <p>
+      Élèves-ingénieurs de l'INSA Toulouse passionnés par tous les domaines de
+      l'informatique, on se réunit régulièrement pour travailler sur des projets
+      communs et proposer notre aide aux étudiants.
+    </p>
   </div>
 </section>
 
 <section>
-  {{/*  TODO: Finish Responsive  */}}
-  <div class="flex w-full flex-wrap justify-center" style="gap: 1rem;">
-    {{ range $.Site.Data.CA }}
+  <div class="ca-members">
+    {{ range sort $.Site.Data.CA "ranking" "asc" }}
       {{ partial "conseil-admin/membre.html" . }}
     {{ end }}
   </div>
 </section>
-
