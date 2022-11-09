@@ -1,10 +1,11 @@
 {
   "name": "Baptiste Rébillard",
   "image": "img/people/Baptiste.png",
-  "position": "Responsable Site Amicale",
+  "position": "Responsable du site de l'amicale",
   "social": [
     { "linkedin": "https://fr.linkedin.com/in/gébaptistereb" },
     { "github": "https://github.com/baptistereb" },
     { "link": "https://baptiste-reb.fr/#" }
-  ]
+  ],
+  "ranking": 5
 }
