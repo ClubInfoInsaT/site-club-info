@@ -23,6 +23,10 @@
   }
 }
 
+.sm\:hidden {
+  display: none;
+}
+
 /* 
 sm: "640px",
       md: "853px",
