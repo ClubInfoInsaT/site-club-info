@@ -7,6 +7,7 @@
 autoSwitchAppearance = true
 colorScheme          = "blowfish"
 defaultAppearance    = "light"    # valid options: light or dark
+disableImageZoom     = true
 enableCodeCopy       = true
 enableSearch         = true
 # logo                 = "img/logo.png"
