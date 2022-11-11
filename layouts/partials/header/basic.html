@@ -27,7 +27,7 @@
             {{ if .Site.Menus.main }}
             {{ range .Site.Menus.main }}
             {{ $class := "text-base font-medium text-gray-500 hover:text-gray-900" }}
-            {{ if eq .URL "/" }}
+            {{ if strings.Contains site.BaseURL .URL }}
             {{ $class = "block text-base font-medium text-gray-900 sm:hidden" }}
             {{ end }}
             <a href="{{ .URL }}" {{ if or (strings.HasPrefix .URL "http:") (strings.HasPrefix .URL "https:") }} target="_blank"{{ end }} class="{{ $class }}" title="{{ .Title }}">
