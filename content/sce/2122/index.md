@@ -4,9 +4,6 @@ summary: "Archive de l'année 2021-2022"
 tags: ["SCE"]
 showSummary : true
 showDate: false
-
-authors:
-  - Mayeul
 ---
 
 Dans le cadre de la semaine climat énergie organisée par l'INSA Toulouse, le Club vous propose deux activités le jeudi 20/01/22 de **9h30 à 12h30 puis de 13h30 à 17h30** : une **fresque du numérique** et **un jeu VR** ! Vous pouvez vous inscrire ici pour ces deux activités. Vous trouverez aussi quelques ressources qu'on vous a chinées pour aller un peu plus loin. N'hésitez pas à y jeter un petit coup d'oeil, il y a des trucs cools ;)
