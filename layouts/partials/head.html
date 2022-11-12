@@ -87,7 +87,6 @@
         integrity="{{ $bundleJS.Data.Integrity }}" data-copy="{{ i18n " code.copy" }}" data-copied="{{ i18n " code.copied"
         }}"></script>
     {{ end }}
-    <script src="/js/zoom.min.js"></script>
     {{/* Icons */}}
     {{ if templates.Exists "partials/favicons.html" }}
     {{ partialCached "favicons.html" .Site }}
@@ -131,31 +130,5 @@
     {{/* Extend head - eg. for custom analytics scripts, etc. */}}
     {{ if templates.Exists "partials/extend-head.html" }}
     {{ partialCached "extend-head.html" .Site }}
-    {{ end }}
-
-    {{/* Firebase */}}
-    {{ with $.Site.Params.firebase }}
-    {{ if isset $.Site.Params "firebase" }}
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
-    <script>
-
-        const firebaseConfig = {
-        apiKey: {{ $.Site.Params.firebase.apiKey }},
-        authDomain: {{ $.Site.Params.firebase.apiKey }},
-        projectId: {{ $.Site.Params.firebase.projectId }},
-        storageBucket: {{ $.Site.Params.firebase.storageBucket }},
-        messagingSenderId: {{ $.Site.Params.firebase.messagingSenderId }},
-        appId: {{ $.Site.Params.firebase.appId }},
-        measurementId: {{ $.Site.Params.firebase.measurementId }}
-        };
-
-        var app = firebase.initializeApp(firebaseConfig);
-        var db = firebase.firestore();
-        var auth = firebase.auth();
-
-    </script>
-    {{ end }}
     {{ end }}
 </head>
