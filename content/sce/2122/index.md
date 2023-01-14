@@ -2,7 +2,6 @@
 title: Edition 2021-2022
 summary: "Archive de l'année 2021-2022"
 tags: ["SCE"]
-showSummary : true
 showDate: false
 ---
 
