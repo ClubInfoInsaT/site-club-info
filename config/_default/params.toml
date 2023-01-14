@@ -22,10 +22,9 @@ mainSections = ["home", "projects"]
 [homepage]
   cardView            = false
   cardViewScreenWidth = false
-  # homepageImage       = "img/logo.png"        # used in: hero, background and card
+  # homepageImage       = "img/logo.png" # used in: hero, background and card
   layout       = "custom" # valid options: page, profile, hero, card, background, custom
   showMoreLink = true
-  # showMoreLinkDest = "/~leban/test-site/projects"
   showMoreLinkDest = "/projects"
   showRecent       = true
   showRecentItems  = 5
@@ -59,25 +58,9 @@ mainSections = ["home", "projects"]
   groupByYear         = true
   showBreadcrumbs     = false
   showCards           = false
-  showSummary         = false
+  showSummary         = true
   showTableOfContents = false
 [sitemap]
   excludedKinds = []
 [taxonomy]
   showTermCount = true
-[firebase]
-# apiKey = "XXXXXX"
-# authDomain = "XXXXXX"
-# projectId = "XXXXXX"
-# storageBucket = "XXXXXX"
-# messagingSenderId = "XXXXXX"
-# appId = "XXXXXX"
-# measurementId = "XXXXXX"
-[fathomAnalytics]
-# site = "ABC12345"
-# domain = "llama.yoursite.com"
-[verification]
-  # google = ""
-  # bing = ""
-  # pinterest = ""
-  # yandex = ""
