@@ -11,9 +11,9 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-    name    = "Acceuil"
-    pageRef = "home"
-    weight  = 10
+    name   = "Acceuil"
+    url    = "/"
+    weight = 10
 # [[main]]
 #     name    = "A Propos"
 #     pageRef = "about"
@@ -27,7 +27,7 @@
     pageRef = "projects"
     weight  = 40
 [[main]]
-    name    = "Parcours personalisés"
+    name    = "Parcours de formations"
     pageRef = "courses"
     weight  = 50
 
@@ -40,7 +40,7 @@
     url    = "https://codinsa.org"
     weight = 52
 [[main]]
-    name   = "Wiki"
+    name   = "WikiEtud"
     url    = "https://wiki.etud.insa-toulouse.fr/"
     weight = 53
 
@@ -56,6 +56,6 @@
     url    = "https://codinsa.org"
     weight = 20
 [[footer]]
-    name   = "Wiki"
+    name   = "WikiEtud"
     url    = "https://wiki.etud.insa-toulouse.fr/"
     weight = 30
