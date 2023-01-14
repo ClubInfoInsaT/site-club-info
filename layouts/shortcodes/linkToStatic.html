@@ -1,0 +1,6 @@
+{{ $href := .Get 0 | default "#" }}
+
+<a href="{{ .Site.BaseURL }}{{ $href }}">
+    {{- .Inner | markdownify -}}
+</a>
+
