@@ -1,10 +1,10 @@
 ---
 title: Conférence du club "Comment réduire son empreinte numérique"
 summary: "Semaine Climat Énergie 2022-20223"
-date: 2023-01-20 
+date: 2023-01-25
 tags: ["Conférence","SCE"]
-showDate: false
-<!-- TODO : Set to 2023-01-25 -->
+authors:
+    - Raphael
 ---
 ## 📰 L'impact : **Qu'est-ce qui consomme** ?
 Quelques Ordres de Grandeur :
@@ -86,10 +86,3 @@ Nous présentons ci-dessous deux excellentes initiatives, mais la règle génér
 
 ## Le Discord du Club
 Si tu as des questions que tu n'as pas pu poser, tu trouveras [là-bas](https://discord.com/invite/9G8cWyK) des étudiants pour y répondre !
-
-
-<!-- 
-<div style="position: relative; padding-bottom: 79%; margin-bottom: 10%; height: 0; overflow: hidden;">
-  <iframe class="pb-32" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" src="https://www.youtube.com/embed/Vpi7Ad7ReOU?start=351s&end=402" />
-</div> -->
-
