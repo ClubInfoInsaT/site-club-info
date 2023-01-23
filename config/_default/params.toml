@@ -10,7 +10,7 @@ defaultAppearance    = "light"    # valid options: light or dark
 disableImageZoom     = true
 enableCodeCopy       = true
 enableSearch         = true
-# logo                 = "img/logo.png"
+logo                 = "img/logo.png"
 mainSections = ["home", "projects"]
 # robots = ""
 [footer]
