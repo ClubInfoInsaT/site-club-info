@@ -78,8 +78,8 @@ Nous présentons ci-dessous deux excellentes initiatives, mais la règle génér
 *Image des composants réparables du Fairphone 3*
 
 ### 💻️ Framework : Un **Ordinateur Couteau suisse Réparable**
-- Les ordinateurs [Framework](https://frame.work/fr/fr) sont des portables totalement réparables où les composants ne sont pas soudés (ce qui permet de les changer et aussi de les remplacer par des composants plus à jour sans avoir à refaire tout l'ordinateur).
-- Les ports (USB, HDMI, Ethernet) peuvent être changés facilement (il suffit de les clipser et déclipser) comme montré [dans cette vidéo](https://youtu.be/lCO31iiZtHQ?t=481)
+- Les **ordinateurs [Framework](https://frame.work/fr/fr)** sont des portables totalement **réparables** où les composants ne sont pas soudés (ce qui permet de les **changer** et aussi de les **remplacer par des composants plus à jour sans avoir à refaire tout l'ordinateur**).
+- Les **ports (USB, HDMI, Ethernet)** peuvent être **changés facilement** (il suffit de les clipser et déclipser) comme montré [dans cette vidéo](https://youtu.be/lCO31iiZtHQ?t=481)
 ![Image des composants réparables du Framework](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.techspot.com%2Fimages%2Fproducts%2F2021%2Flaptops%2Forg%2F2021-07-22-product-3.jpg&f=1&nofb=1&ipt=e7b1997e2add30d75b962a90feb54529f968211b05c03dd9b51dca94a8690190&ipo=images)
 *Image des composants réparables du Framework, les ports customizables sont en bas à gauche*
 
