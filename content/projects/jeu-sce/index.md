@@ -16,7 +16,8 @@ N'hésitez pas à rejoindre [le serveur Discord du Club Info](https://discord.co
 - Faire de la **programmation** (Utilisation du moteur **Godot**)
 
 Au plaisir de vous voir **rejoindre le projet** !<br>
-D'ici là vous pouvez jouer [au jeu de la SCE de l'an dernier](https://www.etud.insa-toulouse.fr/~clubinfo/semaine-climat-2022/jeu-vr/) 
+D'ici là vous pouvez jouer [au jeu de la SCE de l'an dernier](https://newgz.itch.io/trash-sort)
+ou à celui de la [Semaine d'Intégration](https://etud.insa-toulouse.fr/~superPPA/Web/index.html)
 
 ## Le Discord du Club
 Si tu as des questions que tu n'as pas pu poser, tu trouveras [là-bas](https://discord.com/invite/9G8cWyK) des étudiants pour y répondre !
