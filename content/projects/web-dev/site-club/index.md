@@ -7,7 +7,7 @@ authors:
   - Gérald
 ---
 
-Le site du Club Info est un site statique, c'est-à-dire qu'il n'est pas dynamique, et que les pages sont générées à la compilation. Il est écrit en [Mardown](https://fr.wikipedia.org/wiki/Markdown) et [Hugo](https://gohugo.io/), un générateur de site statique écrit en Go. Il est hébergé sur le serveur du club et est accessible à l'adresse [https://clubino.insat.fr](https://clubino.insat.fr).
+Le site du Club Info est un site statique, c'est-à-dire qu'il n'est pas dynamique, et que les pages sont générées à la compilation. Il est écrit en [Mardown](https://fr.wikipedia.org/wiki/Markdown) et [Hugo](https://gohugo.io/), un générateur de site statique écrit en Go. Il est hébergé sur le serveur du club et est accessible à l'adresse [https://clubinfo.insat.fr](https://clubinfo.insat.fr).
 
 Pour les plus curieux, le code source se trouve sur [notre GitHub](https://github.com/ClubInfoINSAT/site-club).
 
