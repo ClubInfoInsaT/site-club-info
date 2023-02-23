@@ -15,12 +15,10 @@ weight       = 1
   image = "img/logo.png"
   links = [
     {email = "mailto:club.info@amicale-insat.fr"},
-    {link = "https://etud.insa-toulouse.fr/~clubinfo/"},
     {discord = "https://discord.gg/9G8cWyK"},
     {facebook = "https://facebook.com/ClubInfoINSAT"},
     {github = "https://github.com/ClubInfoInsaT/"},
     {instagram = "https://www.instagram.com/clubinfoinsat/"},
     {linkedin = "https://linkedin.com/in/club-info-insa-toulouse"},
-    {twitter = "https://mobile.twitter.com/clubinfo_insa_t"}
   ]
   name = "Club Info"
