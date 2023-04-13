@@ -15,10 +15,10 @@ Si tu souhaites découvrir un app store open-source et libre, tu peux aller voir
 Pour la toute première fois, [l'Amicale](https://amicale-insat.fr/) propose une semaine sur le thème du bien-être. Durant cette semaine, aura lieu une ensemble d'ateliers tenus par des membres des clubs de [l'INSA Toulouse](https://www.insa-toulouse.fr/).
 
 Au programme:
-    - Des cours de musique organisé par le [Club Zik](https://zik-insat.fr)
-    - Des cours de danse
-    - Des jeux de société (échecs, go et autres)
-    - Séances de cinéma
+- Des cours de musique organisé par le [Club Zik](https://zik-insat.fr)
+- Des cours de danse
+- Des jeux de société (échecs, go et autres)
+- Séances de cinéma
 
 A cette occasion, nous vous proposons de découvrir des applications gratuites et open-source pour améliorer votre bien-être.
 
