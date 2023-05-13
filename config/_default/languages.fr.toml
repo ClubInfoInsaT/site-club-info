@@ -1,0 +1,64 @@
+displayName  = "FR"
+isoCode      = "fr"
+languageCode = "fr"
+languageName = "French"
+rtl          = false
+weight       = 1
+
+description   = "Le Club Info est un club étudiant de l'INSA Toulouse qui a pour but de promouvoir l'informatique et les sciences du numérique auprès des étudiants de l'INSA Toulouse."
+logo          = "images/logo.png"
+secondaryLogo = "images/logo.png"
+title         = "Club Info INSA Toulouse"
+# copyright = "Copy, _right?_ :thinking_face:"
+
+dateFormat = "2 January 2006"
+
+[author]
+    bio = ""
+    headline = "INSA Toulouse"
+    image = "images/logo.png"
+    links = [
+        {email = "mailto:club.info@amicale-insat.fr"},
+        # {link = "https://link-to-some-website.com/"},
+        # {amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id"},
+        # {apple = "https://www.apple.com"},
+        # {blogger = "https://username.blogspot.com/"},
+        # {codepen = "https://codepen.io/username"},
+        # {dev = "https://dev.to/username"},
+        {discord = "https://discord.gg/9G8cWyK"},
+        # {dribbble = "https://dribbble.com/username"},
+        {facebook = "https://facebook.com/ClubInfoINSAT"},
+        # {flickr = "https://www.flickr.com/photos/username/"},
+        # {foursquare = "https://foursquare.com/username"},
+        {github = "https://github.com/ClubInfoInsaT/"},
+        # {gitlab = "https://gitlab.com/username"},
+        # {google = "https://www.google.com/"},
+        # {hashnode = "https://username.hashnode.dev"},
+        {instagram = "https://www.instagram.com/clubinfoinsat/"},
+        # {keybase = "https://keybase.io/username"},
+        # {kickstarter = "https://www.kickstarter.com/profile/username"},
+        # {lastfm = "https://lastfm.com/user/username"},
+        {linkedin = "https://linkedin.com/in/club-info-insa-toulouse"}
+        # {mastodon = "https://mastodon.instance/@username"},
+        # {medium = "https://medium.com/username"},
+        # {microsoft = "https://www.microsoft.com/"},
+        # {orcid = "https://orcid.org/userid"},
+        # {patreon = "https://www.patreon.com/username"},
+        # {pinterest = "https://pinterest.com/username"},
+        # {reddit = "https://reddit.com/user/username"},
+        # {researchgate = "https://www.researchgate.net/profile/username"},
+        # {slack = "https://workspace.url/team/userid"},
+        # {snapchat = "https://snapchat.com/add/username"},
+        # {soundcloud = "https://soundcloud.com/username"},
+        # {stack-overflow = "https://stackoverflow.com/users/userid/username"},
+        # {steam = "https://steamcommunity.com/profiles/userid"},
+        # {telegram = "https://t.me/username"},
+        # {tiktok = "https://tiktok.com/@username"},
+        # {tumblr = "https://username.tumblr.com"},
+        # {twitch = "https://twitch.tv/username"},
+        # {twitter = "https://twitter.com/username"},
+        # {whatsapp = "https://wa.me/phone-number"},
+        # {youtube = "https://youtube.com/username"},
+        # {ko-fi = "https://ko-fi.com/username"}
+    ]
+    name = "Club Info"

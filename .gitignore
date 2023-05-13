@@ -1,0 +1,9 @@
+# VSCode
+./vscode
+
+# Hugo garbage
+resources/_gen
+.hugo_build.lock
+
+# Build
+public/

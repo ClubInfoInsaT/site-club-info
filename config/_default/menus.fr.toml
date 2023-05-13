@@ -1,0 +1,78 @@
+# -- Main Menu --
+# The main menu is displayed in the header at the top of the page.
+# Acceptable parameters are name, pageRef, page, url, title, weight.
+# 
+# The simplest menu configuration is to provide:
+#   name = The name to be displayed for this menu link
+#   pageRef = The identifier of the page or section to link to
+#
+# By default the menu is ordered alphabetically. This can be
+# overridden by providing a weight value. The menu will then be
+# ordered by weight from lowest to highest.
+
+[[main]]
+    name    = "A Propos"
+    pageRef = "a-propos"
+    weight  = 10
+
+[[main]]
+    name    = "Présentations"
+    pageRef = "presentations"
+    weight  = 20
+
+[[main]]
+    name    = "Projets"
+    pageRef = "projets"
+    weight  = 30
+
+[[main]]
+    name    = "Développement web"
+    pageRef = "parcours-formation/developpement-web"
+    parent  = "Parcours de formation"
+
+[[main]]
+    name    = "Jeu vidéo"
+    pageRef = "parcours-formation/jeu-vidéo"
+    parent  = "Parcours de formation"
+
+[[main]]
+    name    = "Algorithmique"
+    pageRef = "parcours-formation/algorithmique"
+    parent  = "Parcours de formation"
+
+
+[[main]]
+    name    = "Cybersécurité"
+    pageRef = "parcours-formation/cybersécurité"
+    parent  = "Parcours de formation"
+
+[[main]]
+    name    = "SCE"
+    pageRef = "semaine-climat-energie"
+    weight  = 30
+
+[[subnavigation]]
+    name   = "Cod'INSA"
+    url    = "https://codinsa.org/"
+    weight = 10
+
+[[subnavigation]]
+    name   = "WikiEtud"
+    url    = "https://wiki.etud.insa-toulouse.fr/"
+    weight = 20
+
+
+    # -- Footer Menu --
+    # The footer menu is displayed at the bottom of the page, just before
+    # the copyright notice. Configure as per the main menu above.
+
+
+    # [[footer]]
+    #   name = "Tags"
+    #   pageRef = "tags"
+    #   weight = 10
+
+    # [[footer]]
+    #   name = "Categories"
+    #   pageRef = "categories"
+    #   weight = 20
