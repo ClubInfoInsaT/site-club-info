@@ -1,0 +1,11 @@
+{
+  "name": "Baptiste Rébillard",
+  "image": "images/people/Baptiste.png",
+  "position": "Président",
+  "social": [
+    { "linkedin": "https://fr.linkedin.com/in/gébaptistereb" },
+    { "github": "https://github.com/baptistereb" },
+    { "link": "https://baptiste-reb.fr/#" }
+  ],
+  "ranking": 1
+}

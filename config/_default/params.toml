@@ -12,7 +12,7 @@ defaultAppearance    = "dark"     # valid options: light or dark
 enableCodeCopy = true
 enableSearch   = true
 
-# mainSections = ["section1", "section2"]
+mainSections = ["projets"]
 # robots = ""
 
 disableImageOptimization = false
@@ -35,7 +35,7 @@ smartTOC                 = true
   showThemeAttribution   = false
 
 [homepage]
-  layout = "hero" # valid options: page, profile, hero, card, background, custom
+  layout = "custom" # valid options: page, profile, hero, card, background, custom
   #homepageImage = "IMAGE.jpg" # used in: hero, and card
   cardView             = true
   cardViewScreenWidth  = false

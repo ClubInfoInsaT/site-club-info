@@ -1,0 +1,23 @@
+{{ partial "home/hero.html" . }}
+
+
+{{/* Membre du Conseil d'administration */}}
+<h2 class="mt-8 text-2xl font-extrabold">Conseil d'administration</h2>
+
+<section class="prose max-w-full dark:prose-invert">
+  <div>
+    <p>
+      Élèves-ingénieurs de l'INSA Toulouse passionnés par tous les domaines de
+      l'informatique, on se réunit régulièrement pour travailler sur des projets
+      communs et proposer notre aide aux étudiants.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="ca-members grid grid-cols-4 lg:grid-cols-3 md:grid-cols-2">
+    {{ range sort $.Site.Data.CA "ranking" "asc" }}
+      {{ partial "membre-bureau.html" . }}
+    {{ end }}
+  </div>
+</section>
