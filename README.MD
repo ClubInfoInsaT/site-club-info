@@ -49,7 +49,9 @@ Pour en savoir plus sur la structure du site allez voir la [documentation de Hug
 
 ### Ajouter du contenu
 
-#### Ajouter une nouvelle page (article)
+
+<details>
+<summary>Ajouter une nouvelle page (article)</summary>
 
 Pour ajouter une nouvelle page de type _"article"_ comme la page [`/projects/jeu-sce/`](https://clubinfo.insat.fr/projects/jeu-sce/),
 
@@ -77,13 +79,16 @@ Pour ajouter une nouvelle page de type _"article"_ comme la page [`/projects/jeu
 > hugo server -F
 > ```
 
-#### Ajouter une nouvelle page (groupe)
+</details>
+
+<details>
+<summary>Ajouter une nouvelle page (groupe)</summary>
 
 Pour ajouter une nouvelle page de type _"groupe"_ comme la page [`/projects/web-dev/`](https://clubinfo.insat.fr/projects/web-dev/)
 
 - Crée un nouveau dossier du nom de votre choix _sans espace_ dans `content/`
 - Dans ce dossier ajouté un nouveau fichier `_index.md` (le underscore n'est pas une erreur)
-- Ajoute tout en haut du fichier ceci
+- Ajouter tout en haut du fichier ceci
 
   ```toml
   ---
@@ -94,6 +99,51 @@ Pour ajouter une nouvelle page de type _"groupe"_ comme la page [`/projects/web-
   ```
 
   > N'hésite pas à t'inspirer de ce qui a été fait dans [`/content/projects/web-dev`](/content//projects//web-dev/)
+
+</details>
+
+<details>
+<summary>Ajouter un nouvel auteur</summary>
+
+Pour ajouter un nouvel auteur, créer un nouveau fichier dans `data/authors/` avec le nom de l'auteur (sans espace) et l'extension `.json` (ex: `data/authors/John.json`).
+
+Dans ce fichier ajouter ceci :
+
+```json
+{
+  "name": "John Doe",
+  "bio": "Un description verbeuse mais pas trop non plus",
+  "avatar": "/images/people/john.jpg"
+}
+```
+
+> La photo de l'auteur doit être placée dans `assets/images/people/` et doit avoir le même nom que le fichier json (ex: `assets/images/people/John.jpg`)
+
+Recharger la page pour voir les changements.
+
+Pour en savoir plus sur les auteurs allez voir la [documentation de Blowfish](https://blowfish.page/docs/multi-author/).
+
+</details>
+
+<details>
+<summary>Ajouter des membres dans la section 'Conseil d'administration'</summary>
+
+Pour ajouter un nouveau membre dans la section 'Conseil d'administration', ajouter un nouveau fichier dans `data/CA/` avec le nom du membre (sans espace) et l'extension `.json` (ex: `data/CA/John.json`).
+
+Dans ce fichier ajouter ceci :
+
+```json
+{
+  "name": "John Doe",
+  "bio": "Un description verbeuse mais pas trop non plus",
+  "avatar": "/images/people/john.jpg"
+}
+```
+
+> La photo du membre doit être placée dans `assets/images/people/` et doit avoir le même nom que le fichier json (ex: `assets/images/people/John.jpg`)
+
+Recharger la page pour voir les changements.
+</details>
 
 ## Documentation
 
