@@ -1,22 +1,39 @@
-<div class="flex w-full">
+<div class="flex mt-4">
   {{ $memberImage := resources.Get .image }}
   {{ if $memberImage }}
     {{ $memberImage := $memberImage.Fill "192x192" }}
     <img
       class="!mt-0 !mb-0 h-24 w-24 rounded-full ltr:mr-4 rtl:ml-4"
-      width="96"
-      height="96"
       alt="{{ $.name | default "Profile Picture" }}"
       src="{{ $memberImage.RelPermalink }}"
+      width="96"
+      height="96"
     />
   {{ end }}
+
   <div class="place-self-center">
-    <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+    <a class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+      {{ .name }}
+    </a>
+
+    <div class="text-sm text-neutral-700 dark:text-neutral-400">
       {{ .position }}
     </div>
-    <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
-      {{ .name }}
+
+    <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
+      {{ range $links := .social }}
+        {{ range $name, $url := $links }}
+          <a
+            class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+            href="{{ $url }}"
+            target="_blank"
+            aria-label="{{ $name | title }}"
+            rel="me noopener noreferrer"
+          >
+            <span class="inline-block align-text-bottom">{{ partial "icon.html" $name }}</span>
+          </a>
+        {{ end }}
+      {{ end }}
     </div>
-    <div class="text-2xl sm:text-lg">{{ partial "membre-links.html" .social }}</div>
   </div>
 </div>
