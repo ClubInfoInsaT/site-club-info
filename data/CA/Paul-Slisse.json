@@ -2,6 +2,10 @@
   "name": "Paul Slisse",
   "image": "images/people/Paul-Slisse.png",
   "position": "Secrétaire",
-  "social": [],
+  "social": [
+    {
+      "linkedin": "https://www.linkedin.com/in/paul-slisse-59a700247"
+    }
+  ],
   "ranking": 4
 }

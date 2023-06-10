@@ -1,7 +1,11 @@
 {
   "name": "Léandro Rodriguez",
-  "image": "images/people/Léandro.png",
+  "image": "images/people/Léandro-Rodriguez.png",
   "position": "Vice-président",
-  "social": [],
+  "social": [
+    {
+      "linkedin": "https://fr.linkedin.com/in/leandro-rodriguez-10929a228"
+    }
+  ],
   "ranking": 2
 }
