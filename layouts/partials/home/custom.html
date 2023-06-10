@@ -15,7 +15,7 @@
 </section>
 
 <section>
-  <div class="ca-members grid grid-cols-4 lg:grid-cols-3 md:grid-cols-2">
+  <div class="ca-members grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2">
     {{ range sort $.Site.Data.CA "ranking" "asc" }}
       {{ partial "membre-bureau.html" . }}
     {{ end }}
