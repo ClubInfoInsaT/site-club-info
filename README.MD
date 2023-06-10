@@ -112,8 +112,9 @@ Dans ce fichier ajouter ceci :
 ```json
 {
   "name": "John Doe",
+  "image": "/images/people/john.jpg",
   "bio": "Un description verbeuse mais pas trop non plus",
-  "avatar": "/images/people/john.jpg"
+  "social": []
 }
 ```
 
@@ -135,10 +136,15 @@ Dans ce fichier ajouter ceci :
 ```json
 {
   "name": "John Doe",
+  "image": "/images/people/john.jpg"
   "bio": "Un description verbeuse mais pas trop non plus",
-  "avatar": "/images/people/john.jpg"
+  "position": "Président",
+  "social": [],
+  "ranking"; 1
 }
 ```
+
+> Note: `ranking` est un nombre entier qui permet de trier les membres par ordre de présence dans le CA. Plus le nombre est petit, plus le membre sera en haut de la liste.
 
 > La photo du membre doit être placée dans `assets/images/people/` et doit avoir le même nom que le fichier json (ex: `assets/images/people/John.jpg`)
 
