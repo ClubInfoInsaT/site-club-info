@@ -27,6 +27,13 @@ Ce répertoire contient les sources du site du Club Info disponible à cette adr
    > Vous pouvez alors tester le site en local.
    > A chaque modification du code, le serveur se mettra à jour automatiquement.
 
+4. Pour générer le site statique
+   ```bash
+   hugo --gc --minify
+   ```
+   > Le site statique est généré dans `./public/`.
+   > Pour deploy, il existe un script sur le serveur (se renseigner auprès des Roots)
+
 ### Structure du site
 
 Le site est composé de plusieurs parties :
