@@ -13,7 +13,7 @@ Le projet quiz est un projet de développement web qui a pour but de **créer un
 
 ## Génèse du projet
 
-Nombreux sont les professeurs de l'école qui utilisent des outils comme [kahoot](https://kahoot.com/) ou [iQuiz](https://iquiz.univ-toulouse.fr/) pour animer leurs cours. Bien que gratuits, ces outils il y a souvent des paywal pour débloquer des fonctionnalités ou des limitations sur le nombre de joueurs.
+Nombreux sont les professeurs de l'école qui utilisent des outils comme [kahoot](https://kahoot.com/) ou [iQuiz](https://iquiz.univ-toulouse.fr/) pour animer leurs cours. Bien que gratuit, il y a des paywal pour débloquer des fonctionnalités ou des limitations sur le nombre de joueurs sur [kahoot](https://kahoot.com/) et [iQuiz](https://iquiz.univ-toulouse.fr/) à un format peut encourageant pour les étudiants.
 
 Le projet quiz a donc pour but de créer un outil similaire en remédiant à ces problèmes.
 
