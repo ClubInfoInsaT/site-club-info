@@ -12,4 +12,4 @@ Le Club Info organise des événements tout au long de l'année, comme des conf�
 
 ## Sponsoring
 
-Le Club Info est à la recherche de sponsors pour nous aider à financer nos événements. Si vous êtes intéressés, n'hésitez pas à nous contacter à l'adresse [club.info@amicale-insat.fr](mailto:club.info@amicale-insat.fr)
+Le Club Info est à la recherche de sponsors pour nous aider à financer nos événements. Vous pouvez retrouver notre [plaquette de sponsoring](https://drive.google.com/file/d/1hG1zzI2VmevSAs9sIsYOf8Mhvk6qLwrq/view) pour plus d'informations. Pour toute question, n'hésitez pas à nous contacter par mail à l'adresse [club.info@amicale-insat.fr](mailto:club.info@amicale-insat.fr).
