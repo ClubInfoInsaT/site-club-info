@@ -1,0 +1,10 @@
+{
+  "name": "Paul Alnet",
+  "image": "images/people/Paul.png",
+  "role": "head-member",
+  "position": "Responsable Roots",
+  "social": [
+    { "linkedin": "https://www.linkedin.com/in/paul-alnet" },
+    { "github": "https://github.com/Paulao17" }
+  ]
+}

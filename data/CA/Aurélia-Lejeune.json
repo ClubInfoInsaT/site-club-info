@@ -1,9 +1,9 @@
 {
   "name": "Aurélia Lejeune",
   "image": "images/people/Aurélia.png",
+  "role": "honorary-member",
   "position": "Membre d'honneur",
   "social": [
     { "linkedin": "https://fr.linkedin.com/in/aurélia-lejeune-275b55204" }
-  ],
-  "ranking": 5
+  ]
 }
