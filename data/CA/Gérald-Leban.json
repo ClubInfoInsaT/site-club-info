@@ -1,0 +1,10 @@
+{
+  "name": "Gérald Leban",
+  "image": "images/people/Gérald.png",
+  "role": "head-member",
+  "position": "Mainteneur du site",
+  "social": [
+    { "linkedin": "https://fr.linkedin.com/in/gérald-leban-6806081a2" },
+    { "github": "https://github.com/Shinyhero36" }
+  ]
+}

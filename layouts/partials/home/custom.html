@@ -1,7 +1,4 @@
-{{ partial "home/hero.html" . }}
-
-
-{{/* Membre du Conseil d'administration */}}
+{{ partial "home/hero.html" . }} {{/* Membre du Conseil d'administration */}}
 <h2 class="mt-8 text-2xl font-extrabold">Conseil d'administration</h2>
 
 <section class="prose max-w-full dark:prose-invert">
@@ -15,9 +12,33 @@
 </section>
 
 <section>
+  {{/*  Membre du bureau  */}}
+  <h3 class="mt-8 text-lg font-bold">Membres du bureau</h3>
   <div class="ca-members grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2">
     {{ range sort $.Site.Data.CA "ranking" "asc" }}
-      {{ partial "membre-bureau.html" . }}
+      {{ if eq .role "bureau-member" }}
+        {{ partial "membre-bureau.html" . }}
+      {{ end }}
+    {{ end }}
+  </div>
+
+  {{/*  Membre d'honneur  */}}
+  <h3 class="mt-8 text-lg font-bold">Membres d'honneur</h3>
+  <div class="ca-members grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2">
+    {{ range $.Site.Data.CA }}
+      {{ if eq .role "honorary-member" }}
+        {{ partial "membre-bureau.html" . }}
+      {{ end }}
+    {{ end }}
+  </div>
+
+  {{/*  Membre à responsabilité  */}}
+  <h3 class="mt-8 text-lg font-bold">Membres à responsabilité</h3>
+  <div class="ca-members grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2">
+    {{ range $.Site.Data.CA }}
+      {{ if eq .role "head-member" }}
+        {{ partial "membre-bureau.html" . }}
+      {{ end }}
     {{ end }}
   </div>
 </section>

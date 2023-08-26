@@ -136,22 +136,59 @@ Pour en savoir plus sur les auteurs allez voir la [documentation de Blowfish](ht
 <details>
 <summary>Ajouter des membres dans la section 'Conseil d'administration'</summary>
 
-Pour ajouter un nouveau membre dans la section 'Conseil d'administration', ajouter un nouveau fichier dans `data/CA/` avec le nom du membre (sans espace) et l'extension `.json` (ex: `data/CA/John.json`).
+Pour ajouter un nouveau membre dans la section 'Conseil d'administration', ajouter un nouveau fichier dans `data/CA/` avec le nom du membre (sans espace) et l'extension `.json` (ex: `data/CA/John-Doe.json`).
+
+**Ajouter un membre du bureau**
 
 Dans ce fichier ajouter ceci :
 
 ```json
 {
   "name": "John Doe",
-  "image": "/images/people/john.jpg"
-  "bio": "Un description verbeuse mais pas trop non plus",
+  "image": "images/people/John-Doe.png",
+  "role": "bureau-member",
   "position": "Président",
-  "social": [],
-  "ranking"; 1
+  "social": [
+    { "linkedin": "https://fr.linkedin.com/in/john-doe" },
+  ],
+  "ranking": 1
 }
 ```
 
-> Note: `ranking` est un nombre entier qui permet de trier les membres par ordre de présence dans le CA. Plus le nombre est petit, plus le membre sera en haut de la liste.
+> Note: `ranking` est un nombre entier qui permet de trier les membres par ordre de présence dans le CA. (ex: `1` pour le président, `2` pour le vice-président, etc...)
+
+**Ajouter un membre d'honneur**
+
+Dans ce fichier ajouter ceci :
+
+```json
+{
+  "name": "John Doe",
+  "image": "images/people/John-Doe.png",
+  "role": "honorary-member",
+  "position": "Membre d'honneur",
+  "social": [
+    { "linkedin": "https://fr.linkedin.com/in/john-doe" },
+  ]
+}
+```
+
+**Ajouter un membre à responsabilité**
+
+Dans ce fichier ajouter ceci :
+
+```json
+{
+  "name": "John Doe",
+  "image": "images/people/John-Doe.png",
+  "role": "head-member",
+  "position": "Response de ...",
+  "social": [
+    { "linkedin": "https://fr.linkedin.com/in/john-doe" }
+  ]
+}
+
+```
 
 > La photo du membre doit être placée dans `assets/images/people/` et doit avoir le même nom que le fichier json (ex: `assets/images/people/John.jpg`)
 
