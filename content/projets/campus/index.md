@@ -11,112 +11,65 @@ authors:
 Si tu souhaites contribuer à un projet, n'hésite pas à nous contacter sur le [serveur Discord](https://discord.gg/6qZ2c7J) !
 {{</alert>}}
 
-<img src="https://etud.insa-toulouse.fr/~amicale_app/images/promo/Banner.png" alt="banner" width="500"/>
+## Développement et Fonctionnement de l'application Campus
 
-<div align="center">
-  <a href="https://apps.apple.com/us/app/id1477722148">
-    <img src="https://etud.insa-toulouse.fr/~amicale_app/images/promo/app-store-badge.png" alt="app-store" width="150"/>
-  </a>
-  <a href="https://play.google.com/store/apps/details?id=fr.amicaleinsat.application">
-    <img src="https://etud.insa-toulouse.fr/~amicale_app/images/promo/google-play-badge.png" alt="google-play" width="150"/>
-  </a>
-</div>
+L'[application Campus][campus] a été lancée pendant l'été 2019 par Arnaud Vergnet, alors étudiant en
+3MIC à l'INSA. Cette application, compatible avec les systèmes d'exploitation Android et iOS, vise à
+offrir aux étudiants un accès facile aux informations relatives au campus. Elle offre plusieurs
+fonctionnalités, telles que la connexion au compte Amicale, la liste des événements sur le campus,
+l'état des machines à laver et l'emploi du temps, entre autres services.
 
-Projet démarré pendant l'été 2019 par Arnaud Vergnet (alors en 3MIC), cette application compatible Android et iOS permet aux étudiants d'avoir un accès facile aux informations du campus :
- - Connexion à son compte Amicale
- - Liste des événements sur le campus
- - État des machines à laver
- - Emploi du temps
+L'objectif principal de l'application Campus est de faciliter la vie des étudiants en leur
+permettant d'accéder rapidement et efficacement aux informations dont ils ont besoin au quotidien.
+Grâce à cette application, les étudiants peuvent rester informés des événements se déroulant sur le
+campus, vérifier l'état des machines à laver avant de les utiliser, consulter leur emploi du temps
+et bien plus encore.
 
-...et bien d'autres services
+L'application est développée en TypeScript, un langage de programmation qui vise à rendre le
+JavaScript plus robuste et typé. Pour la création de l'interface utilisateur, le framework open
+source React Native, développé par Facebook, est utilisé. Cette combinaison permet de n'écrire qu'un
+seul code TypeScript qui peut ensuite être compilé et exécuté à la fois sur Android et iOS,
+simplifiant ainsi le processus de développement.
 
-Le code source de l'application est disponible [ici](https://git.etud.insa-toulouse.fr/vergnet/application-amicale), et celle du serveur [ici](https://git.etud.insa-toulouse.fr/vergnet/application-amicale-serveur).
+La contribution à l'application Campus est ouverte à tous les intéressés, quel que soit leur niveau
+de compétence en développement. Les contributeurs peuvent proposer des améliorations, signaler des
+bugs par [e-mail][mail], sur [Discord][discord] ou directement sur la [page du projet][github] en se
+connectant avec leur compte GitHub. De plus, les personnes bilingues ou multilingues peuvent aider à
+[traduire l'application][translate] dans d'autres langues.
 
-## 🗨️ [Des questions ? Viens discuter sur Discord !](https://discord.gg/W8MeTec)
+Pour les développeurs qui souhaitent contribuer au projet, un [guide][contribute] est disponible
+pour les orienter dans le processus de contribution. Des [liens utiles][links] sont également
+fournis pour aider les contributeurs à comprendre les technologies utilisées dans l'application
+Campus.
 
-## ️☑️ [Feuille de route sur notre Github](https://github.com/ClubInfoInsaT/application-amicale/projects/1)
+L'application Campus est distribuée sous [licence GPLv3][gpl], ce qui signifie qu'elle est open
+source et que son code source est accessible à tous. Cela permet à la communauté de développeurs de
+contribuer à l'amélioration continue de l'application.
 
-## ⏩ Rejoindre la Beta
+Depuis la rentrée 2022, l'équipe de développement de l'Amicale travaille sur la refonte du [site
+web][amicale] en utilisant PHP. Par conséquent, l'application Campus évolue en parallèle avec ces
+changements. Les APIs sont modifiées et l'application est mise à jour en conséquence. Paul Alnet,
+mainteneur de l'application Campus et responsable des [Roots Étudiants][roots], assure le suivi du
+projet et corrige les bugs rencontrés.
 
-Avant de publier une nouvelle version de l'application au grand public, on effectue d'abord des tests avec un effectif réduit d'utilisateurs. On appelle cette phase le Beta Testing.
+L'application Campus a bénéficié de l'implication de nombreux contributeurs et de l'aide précieuse
+de Gérald Leban et Baptiste Rébillard. Ces personnes ont contribué à l'identification de bugs, à
+l'ajout de nouvelles fonctionnalités, à la création de maquettes de design et l'intégration de la
+nouvelle API.
 
-Pour rejoindre la Beta il faut :
+En conclusion, l'application Campus de l'Amicale de l'INSA offre aux étudiants un accès facile aux
+informations du campus et facilite leur vie quotidienne. Grâce à une communauté de contributeurs
+engagés, l'application continue d'évoluer et de s'améliorer. Si vous êtes intéressé à participer à
+ce projet, vous pouvez consulter les liens fournis pour en savoir plus sur le développement et les
+fonctionnalités de l'application Campus.
 
-- Sur Android : rejoindre la Beta sur Google Play Store. Alternativement, des fichiers apk sont ponctuellement distribués sur le [Discord](https://discord.com/invite/W8MeTec).
-- Sur IOS : Installer l'application [Testflight](https://apps.apple.com/fr/app/testflight/id899247664) et envoyer un message à Paul A sur Discord avec ton Apple ID.
-Rejoindre le [Discord](https://discord.com/invite/W8MeTec) pour être averti.e des changements et fonctionnalités à tester.
+[campus]: https://wiki.etud.insa-toulouse.fr/books/application-mobile-campus/page/pr%C3%A9sentation-de-lappli
+[mail]: mailto:app@amicale-insat.fr
+[discord]: https://discord.gg/9G8cWyK
+[github]: https://github.com/ClubInfoInsaT/application-amicale
+[translate]: https://github.com/ClubInfoInsaT/application-amicale/blob/master/doc/TRANSLATE.md
+[contribute]: https://github.com/ClubInfoInsaT/application-amicale/blob/master/doc/CONTRIBUTE.md
+[gpl]: https://fr.wikipedia.org/wiki/Licence_publique_g%C3%A9n%C3%A9rale_GNU
+[amicale]: https://amicale-insat.fr/
+[roots]: https://wiki.etud.insa-toulouse.fr/books/roots-%C3%A9tudiants/page/le-role-des-roots-etudiants
 
-
-## 👨‍💻 Technologies Utilisées
-
-Cette application est faite en JavaScript avec React Native (framework Open Source créé par Facebook).
-
-React Native permet de n’avoir qu’un seul code JavaScript à écrire pour Android et iOS. Pour compiler pour la plateforme souhaitée, il suffit d’effectuer une simple commande. Plus besoin de Mac pour développer une application iOS ! (Mais toujours besoin d’un pour compiler et publier sur l’App store…)
-
-Tu trouveras une liste de liens pour retrouver toutes les infos !
-
-### [📔️ Notes de changement](https://github.com/ClubInfoInsaT/application-amicale/blob/master/Changelog.md)
-
-### [🗒️ Notes sur l’état actuel du projet](https://github.com/ClubInfoInsaT/application-amicale/blob/master/doc/NOTES.md)
-
-## 🤝 Contributeurs
-
-<table>
-<thead>
-  <tr>
-    <th style="width: 174.517px;">&nbsp;</th>
-    <th style="width: 171.5px;">
-      <img src="https://secure.gravatar.com/avatar/8e33a1b2cedf7168e8468a1522cc8c56?d=identicon&amp;s=290" alt="app-store" width="150">
-    </th>
-    <th style="width: 168.483px;">
-      <img src="https://secure.gravatar.com/avatar/9792c3643f98cddbc2a42e05422fe66e?d=identicon&amp;s=290" alt="app-store" width="150">
-    </th>
-    <th style="vertical-align: middle; width: 171.5px; text-align: center">
-      <p style="margin-bottom: 0in; line-height: 100%;">❔</p>
-    </th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td style="text-align: center; width: 174.517px;">
-      <strong>Paul Alnet<br></strong>
-    </td>
-    <td style="text-align: center; width: 171.5px;">
-      <strong>Arnaud Vergnet</strong>
-    </td>
-    <td style="text-align: center; width: 168.483px;">
-      <strong>Yohan Simard</strong>
-    </td>
-    <td style="text-align: center; width: 171.5px;">
-      <strong>Toi ?</strong>
-    </td>
-    </tr>
-    <tr>
-      <td style="text-align: center; width: 174.517px;">Mainteneur actuel</td>
-      <td style="text-align: center; width: 171.5px;">Créateur</td>
-      <td style="text-align: center; width: 168.483px;">Correction de quelques bugs</td>
-      <td style="text-align: center; width: 171.5px;">
-        <a title="Guide de contribution" href="https://wiki.etud.insa-toulouse.fr/books/application-mobile-campus/chapter/guide-de-contribution">
-          Contribue pour faire vivre le projet !
-        </a>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-
-## 👏 Remerciements
-
-- **Béranger Quintana Y Arciosana** : Étudiant en AE (2020) et Président de l’Amicale au moment de la création et du lancement du projet. L’application, c’était son idée. Il a beaucoup aidé pour trouver des bugs, de nouvelles fonctionnalités et faire de la com.
-- **Céline Tassin** : Étudiante en GPE (2020). Sans elle, tout serait moins mignon. Elle a aidé pour écrire le texte, faire de la com, et aussi à créer la mascotte 🦊.
-- **Damien Molina** : Étudiant en IR (2020) et créateur de la dernière version du site de l’Amicale. Grâce à son aide, intégrer les services de l’Amicale à l’application a été très simple.
-- **Titouan Labourdette** : Étudiant en IR (2020). Il a beaucoup aidé pour trouver des bugs et proposer des nouvelles fonctionnalités.
-- **Théo Tami** : Étudiant en AE (2020). Si l’application marche sur iOS, c’est grâce à son aide lors de ses nombreux tests.
-
-## 📄 Licence
-L’application est Open Source sous licence GPLv3.
-
-## 🔐 Copyright
-Apple and Apple Logo are trademarks of Apple Inc.
-
-Google Play et le logo Google Play sont des marques de Google LLC.
