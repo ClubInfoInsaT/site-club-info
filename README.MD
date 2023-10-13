@@ -21,9 +21,11 @@ Ce répertoire contient les sources du site du Club Info disponible à cette adr
    ```
 
 3. Lancer le serveur de développement
+
    ```bash
    hugo serve
    ```
+
    > Vous pouvez alors tester le site en local.
    > A chaque modification du code, le serveur se mettra à jour automatiquement.
 
@@ -56,6 +58,50 @@ Pour en savoir plus sur la structure du site allez voir la [documentation de Hug
 
 ### Ajouter du contenu
 
+<details>
+<summary>Ajouter une article sur un parcours de formation</summary>
+
+Dans un terminal, se placer dans le dossier du site et lancer la commande suivante :
+
+```bash
+# pwd
+# /path/to/site-club-info/
+
+# Créer un nouvel article pour un parcours de formation
+hugo new parcours-formation/le-titre-du-parcours-de-formation-sans-espace
+```
+
+</details>
+
+<details>
+<summary>Ajouter une article sur un projet</summary>
+
+Dans un terminal, se placer dans le dossier du site et lancer la commande suivante :
+
+```bash
+# pwd
+# /path/to/site-club-info/
+
+# Créer un nouvel article pour un projet
+hugo new projets/le-titre-du-projet-sans-espace
+```
+
+</details>
+
+<details>
+<summary>Ajouter une article sur la semaine climat</summary>
+
+Dans un terminal, se placer dans le dossier du site et lancer la commande suivante :
+
+```bash
+# pwd
+# /path/to/site-club-info/
+
+# Créer un nouvel article pour l'année 2024
+hugo new semaine-climat-energie/2024
+```
+
+</details>
 
 <details>
 <summary>Ajouter une nouvelle page (article)</summary>
@@ -85,27 +131,6 @@ Pour ajouter une nouvelle page de type _"article"_ comme la page [`/projects/jeu
 > ```bash
 > hugo server -F
 > ```
-
-</details>
-
-<details>
-<summary>Ajouter une nouvelle page (groupe)</summary>
-
-Pour ajouter une nouvelle page de type _"groupe"_ comme la page [`/projects/web-dev/`](https://clubinfo.insat.fr/projects/web-dev/)
-
-- Crée un nouveau dossier du nom de votre choix _sans espace_ dans `content/`
-- Dans ce dossier ajouté un nouveau fichier `_index.md` (le underscore n'est pas une erreur)
-- Ajouter tout en haut du fichier ceci
-
-  ```toml
-  ---
-  title: "Le titre de l'article"
-  summary: "Un description verbeuse mais pas trop non plus"
-  date: YYYY-MM-DD
-  ---
-  ```
-
-  > N'hésite pas à t'inspirer de ce qui a été fait dans [`/content/projects/web-dev`](/content//projects//web-dev/)
 
 </details>
 
@@ -148,9 +173,7 @@ Dans ce fichier ajouter ceci :
   "image": "images/people/John-Doe.png",
   "role": "bureau-member",
   "position": "Président",
-  "social": [
-    { "linkedin": "https://fr.linkedin.com/in/john-doe" },
-  ],
+  "social": [{ "linkedin": "https://fr.linkedin.com/in/john-doe" }],
   "ranking": 1
 }
 ```
@@ -167,9 +190,7 @@ Dans ce fichier ajouter ceci :
   "image": "images/people/John-Doe.png",
   "role": "honorary-member",
   "position": "Membre d'honneur",
-  "social": [
-    { "linkedin": "https://fr.linkedin.com/in/john-doe" },
-  ]
+  "social": [{ "linkedin": "https://fr.linkedin.com/in/john-doe" }]
 }
 ```
 
@@ -183,17 +204,19 @@ Dans ce fichier ajouter ceci :
   "image": "images/people/John-Doe.png",
   "role": "head-member",
   "position": "Response de ...",
-  "social": [
-    { "linkedin": "https://fr.linkedin.com/in/john-doe" }
-  ]
+  "social": [{ "linkedin": "https://fr.linkedin.com/in/john-doe" }]
 }
-
 ```
 
 > La photo du membre doit être placée dans `assets/images/people/` et doit avoir le même nom que le fichier json (ex: `assets/images/people/John.jpg`)
 
 Recharger la page pour voir les changements.
+
 </details>
+
+> **Note**
+>
+> N'oubliez pas de changer le frontmatter du fichier markdown !
 
 ## Documentation
 
