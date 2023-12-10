@@ -31,25 +31,30 @@
     weight  = 30
 
 [[main]]
-    name    = "Développement web"
+    name    = "Parcours développement web"
     pageRef = "parcours-formation/developpement-web"
-    parent  = "Parcours de formation"
+    parent  = "Formations et Tutorats"
 
 [[main]]
-    name    = "Jeu vidéo"
+    name    = "Parcours Jeu vidéo"
     pageRef = "parcours-formation/jeu-vidéo"
-    parent  = "Parcours de formation"
+    parent  = "Formations et Tutorats"
 
 [[main]]
-    name    = "Algorithmique"
-    pageRef = "parcours-formation/algorithmique"
-    parent  = "Parcours de formation"
+    name    = "Parcours algorithmie"
+    pageRef = "parcours-formation/algorithmie"
+    parent  = "Formations et Tutorats"
 
 
 [[main]]
-    name    = "Cybersécurité"
+    name    = "Parcours cybersécurité"
     pageRef = "parcours-formation/cybersécurité"
-    parent  = "Parcours de formation"
+    parent  = "Formations et Tutorats"
+
+[[main]]
+    name    = "Tutorats"
+    pageRef = "tutorats"
+    parent  = "Formations et Tutorats"
 
 [[main]]
     name    = "SCE"

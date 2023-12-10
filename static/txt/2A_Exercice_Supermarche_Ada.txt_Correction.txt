@@ -1,0 +1,328 @@
+with Ada.Text_IO;use Ada.Text_IO;
+with Ada.Integer_Text_IO;use Ada.Integer_Text_IO;
+with Ada.Float_Text_IO;use Ada.Float_Text_IO;
+with Ada.Unchecked_Deallocation;
+
+procedure Supermarche is
+-- Partie 1: Utilisation d'un Tableau Dynamique
+
+--Question 1
+--type CategorieProduit is (Epicerie, ProduitsFrais, Hygiene);
+
+type Produit is record
+    Code : Integer;
+    Nom: String(1..20);
+    Prix : Float;
+    Quantite : Integer;
+    --Categorie : CategorieProduit;
+    Promotion : Boolean; 
+end record;
+
+--Question 2
+type Tab_Produits is array(Integer range<>) of Produit;
+
+function CreerTableauProduits return Tab_Produits is
+
+Nb_Stock:Integer;
+
+begin
+	Put_Line("Combien de produits differents avez vous en stock?");
+	Get(Nb_Stock);
+declare
+   	Stock : Tab_Produits(1..Nb_Stock);
+begin
+   	for K in 1..Nb_Stock loop
+		Put_Line("Produit " & Integer'Image(K)& ":");
+		Put_Line("Quel est le code du produit?");
+		Get(Stock(K).Code);
+		Put_Line("Quel est son nom?");
+		Get(Stock(K).Nom);
+		Put_Line("Quel est son prix?");
+		Get(Stock(K).Prix);
+		Put_Line("Quel quantite de se produit avez vous en stock?");
+		Get(Stock(K).Quantite);
+		if (Stock(K).Code mod 5)=0 then
+			Stock(K).Promotion:=True;
+		else
+			Stock(K).Promotion:=False;
+		end if;
+	end loop;
+   	return Stock;
+end;
+end CreerTableauProduits;
+
+-- Question 3
+function CalculerTotalStock(Stock : Tab_Produits) return Float is
+
+   Total : Float := 0.0;
+
+begin
+	if Stock'First=Stock'Last then
+		Total:=Stock(Stock'First).Prix*Float(Stock(Stock'First).Quantite);
+	else
+		Total:=CalculerTotalStock(Stock(Stock'First..Stock'First))+CalculerTotalStock(Stock(Stock'First+1..Stock'Last));
+	end if;
+	return Total;
+
+end CalculerTotalStock;
+
+--Question 4
+function RechercherProduitAvecRecommandation(Code : Integer; Stock : Tab_Produits) return Produit is
+
+   ProduitRecherche : Produit;
+   Trouve:Boolean:=False;
+   Compt:Integer:=1;
+
+begin
+
+    if Stock'Length=0 then
+		Put_Line("Le stock est vide");
+	else
+		while not(Trouve) and Compt<=Stock'Last loop
+			if Stock(Compt).Code = Code then
+				ProduitRecherche:=Stock(Compt);
+			end if;
+			Compt:=Compt+1;
+		end loop;
+		-- Si le produit n'est pas trouve, recommander un produit populaire
+		if not(Trouve) then
+			ProduitRecherche := Stock(Stock'Length/2);
+			Put_Line("Nous n'avons pas trouvé votre produit mais voici ce que nous vous recommandons.);
+		end if;
+	end if;
+   return ProduitRecherche;
+
+end RechercherProduitAvecRecommandation;
+
+--Question 5. 
+function ProduitLeMoinsOuLePlusCher(MoinsCher : Boolean; Stock : Tab_Produits) return Produit is
+
+   ProduitSelectionne : Produit; --Va servir pour retenir le produit le moins/plus cher
+begin
+
+   if Stock'Length = 0 then
+      Put_Line("Le stock est vide.");
+   else
+      -- Initialiser avec le premier produit du panier
+      ProduitSelectionne := Stock(Stock'First);
+
+      -- Comparer les prix avec les autres produits dans le panier
+      for ProduitCourant of Stock(Stock'First+1..Stock'Last) loop
+         if MoinsCher and then ProduitCourant.Prix < ProduitSelectionne.Prix then
+            ProduitSelectionne := ProduitCourant;
+         elsif not MoinsCher and then ProduitCourant.Prix > ProduitSelectionne.Prix then
+            ProduitSelectionne := ProduitCourant;
+         end if;
+      end loop;
+   end if;
+
+   return ProduitSelectionne;
+
+end ProduitLeMoinsOuLePlusCher;
+
+-- Question 6 
+procedure TriParPrixCroissant(Stock : in out Tab_Produits) is
+
+   IndexMinimum : Natural;
+   Aux : Produit;
+
+begin
+
+   for i in Stock'First .. Stock'Last - 1 loop
+      IndexMinimum := i;
+      
+      --On cherche parmi les elements restants, le moins cher
+      for j in i + 1 .. Stock'Last loop
+         if Stock(j).Prix < Stock(IndexMinimum).Prix then
+            IndexMinimum := j;
+         end if;
+      end loop;
+
+      -- Echangez les elements pour les trier
+      Aux := Stock(i);
+      Stock(i) := Stock(IndexMinimum);
+      Stock(IndexMinimum) := Aux;
+   end loop;
+
+end TriParPrixCroissant;
+
+-- Partie 2: Utilisation d'une Liste Chainee
+
+-- Question 1
+
+	type Cellule;
+	type Liste_Produit is access Cellule;
+	type Cellule is record
+		Prod:Produit;
+		Suiv:Liste_Produit;
+	end record;
+
+procedure Free is new Ada.Unchecked_Deallocation(Cellule,Liste_Produit);
+
+procedure AddPanier(Prod : in Produit; Panier : in out Liste_Produit) is
+   
+begin
+
+   Panier := new Cellule'(Prod,Panier);
+
+end AddPanier;
+
+--Question 2
+
+procedure Remplissage(Stock:in out Tab_Produits ;Panier: in out Liste_Produit) is
+
+	Achat:Integer;
+	Nombre:Integer;
+	P:Produit;
+
+begin
+	for K in Stock'First..Stock'Last loop
+		Put_Line("Voulez vous acheter le produit (Oui=1, Non=0):" & Stock(K).Nom & ", il en reste:" & Integer'Image(Stock(K).Quantite));
+		Get(Achat);
+		if Achat=1 then
+			Put_Line("Combien en voulez vous?");
+			Get(Nombre);
+			if Nombre>Stock(K).Quantite then
+				Put_Line("Vous ne pouvez pas en acheter autant, il n'y en a pas assez dans le stock.");
+			else
+				Stock(K).Quantite:=Stock(K).Quantite-Nombre;
+				P:=Stock(K);
+				P.Quantite:=Nombre;
+				AddPanier(P,Panier);
+			end if;
+		end if;
+	end loop;	
+
+end Remplissage;
+
+--Question 3
+
+function CoutPanier(Panier: in Liste_Produit) return Float is
+
+	Total:Float:=0.0;
+
+begin
+
+	if Panier=NULL then
+		NULL;
+	else
+		Total:=Panier.all.Prod.Prix*Float(Panier.all.Prod.Quantite)+CoutPanier(Panier.all.Suiv);
+	end if;
+	return Total;	
+
+end CoutPanier;
+
+--Question 4
+
+function InPanier(Code: Integer ; Panier: in Liste_Produit) return Boolean is
+
+	Aux:Liste_Produit:=Panier;
+	Appartient:Boolean:=False;
+
+begin
+
+	while not(Appartient) and Aux/=NULL loop
+		if Aux.all.Prod.Code=Code then
+			Appartient:=True;
+		end if;
+		Aux:=Aux.all.Suiv;
+	end loop;
+	return Appartient;
+end InPanier;
+
+--Question 5
+
+procedure PromoPanier(Panier: in out Liste_Produit) is
+
+	P:Liste_Produit:=Panier;
+begin
+
+	while P/=NULL loop
+		if P.all.Prod.Promotion then
+			P.all.Prod.Prix:=P.all.Prod.Prix*0.9;
+			P.all.Prod.Promotion:=False;
+		end if;
+		P:=P.all.Suiv;
+	end loop;
+end PromoPanier;
+
+--Question 6
+
+procedure AffPanier(Panier: Liste_Produit) is
+
+begin
+	if Panier=NULL then
+		New_Line;
+	else
+		Put_Line("Code:" & Integer'Image(Panier.all.Prod.Code) & ", Nom:" & Panier.all.Prod.Nom & ", Prix:" & Float'Image(Panier.all.Prod.Prix) & ", Quantite:" & Integer'Image(Panier.all.Prod.Quantite));
+		AffPanier(Panier.all.Suiv);
+	end if;
+end AffPanier;
+
+-- Programme Principal
+
+Stock : Tab_Produits := CreerTableauProduits;
+Prod:Produit;
+Panier:Liste_Produit:=NULL;
+
+begin
+   
+
+   -- Testez chaque fonction de la Partie 1 avec le tableau 'Stock'
+
+
+   --Affichage du stock
+   Put_Line("Le stock:");
+   for Produit of Stock loop
+   		Put_Line("Code:" & Integer'Image(Produit.Code) & ", Nom:" & Produit.Nom & ", Prix:" & Float'Image(Produit.Prix) & ", Quantite:" & Integer'Image(Produit.Quantite));
+   end loop;
+   New_Line;
+
+   --Question 3 
+   Put_Line("Prix total du stock : " & Float'Image(CalculerTotalStock(Stock)));
+   New_Line; 
+
+   --Question 4
+   Prod:=RechercherProduitAvecRecommandation(2,Stock);
+   Put_Line("On cherche le produit 2:");
+   Put_Line("Code:" & Integer'Image(Prod.Code) & ", Nom:" & Prod.Nom & ", Prix:" & Float'Image(Prod.Prix) & ", Quantite:" & Integer'Image(Prod.Quantite)); 
+   New_Line;
+
+   --Question 5
+   Prod:=ProduitLeMoinsOuLePlusCher(True,Stock);
+   Put_Line("Produit le moins cher: Code:" & Integer'Image(Prod.Code) & ", Nom:" & Prod.Nom & ", Prix:" & Float'Image(Prod.Prix) & ", Quantite:" & Integer'Image(Prod.Quantite));
+   New_Line;
+
+   --Question 6
+   Put_Line("Le stock par prix croissant:");
+   TriParPrixCroissant(Stock);
+   for Produit of Stock loop
+   		Put_Line("Code:" & Integer'Image(Produit.Code) & ", Nom:" & Produit.Nom & ", Prix:" & Float'Image(Produit.Prix) & ", Quantite:" & Integer'Image(Produit.Quantite));
+   end loop;
+   New_Line;
+	
+   -- Testez chaque fonction de la Partie 2 avec la liste chainee 'Panier'
+
+   --Question 2
+   Remplissage(Stock,Panier);
+   Put_Line("Votre panier:");
+   AffPanier(Panier);
+   New_Line;
+
+   --Question 3
+   Put_Line("Total du panier : " & Float'Image(CoutPanier(Panier)));
+   New_Line;
+
+   --Question 4
+   Put_Line("Le produit 3 est-il dans le panier?");
+   Put_Line("Reponse: " & Boolean'Image(InPanier(3,Panier)));
+   New_Line;
+
+   --Question 5
+   PromoPanier(Panier);
+   Put_Line("Total du panier apres reduction : " & Float'Image(CoutPanier(Panier)));
+   New_Line;
+
+   Free(Panier);
+
+end Supermarche;
