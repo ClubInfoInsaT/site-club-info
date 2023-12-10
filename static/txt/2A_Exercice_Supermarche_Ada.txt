@@ -1,0 +1,62 @@
+Vous partirez avec le code suivant:
+with Ada.Text_IO;use Ada.Text_IO;
+with Ada.Integer_Text_IO;use Ada.Integer_Text_IO;
+with Ada.Float_Text_IO;use Ada.Float_Text_IO;
+with Ada.Unchecked_Deallocation;
+
+procedure Supermarché is
+
+begin
+
+end Supermarché;
+
+NB1: Vous recopierez cette ligne après avoir défini vos pointeurs et votre liste:
+procedure Free is new Ada.Unchecked_Deallocation(Cellule,Liste_Produit);
+(où Liste_Produit pointe sur Cellule, n'hésitez pas à demander de l'aide si ce n'est pas clair)
+
+
+Partie 1: Utilisation d'un Tableau Dynamique
+
+Dans cette première partie, votre supermarché préféré souhaite lier son stock avec son application pour pouvoir afficher les disponibilités en temps réel.
+
+    1.Structure de Données: Produit et Catégories
+        Concevez un type de record appelé Produit avec les champs suivants : Code (Entier),Nom (String), Prix (Float), Quantite (Entier) et Promotion (Boolean).
+
+    2.Dimensionnement Dynamique du Tableau: Création d'un Tableau de Produits
+        Définissez un tableau de produits. Ecrivez une fonction qui demande au salarié de saisir le nombre de produits qu'il a en stock. Utilisez cette information pour dimensionner dynamiquement le tableau de produits. Ensuite, remplissez le tableau avec des produits (toujours en les demandant à l'utilisateur et toujours dans la fonction).On considèrera que les produits avec un code multiple de 5 sont en promotion et les autres non (on gardera cette convention dans tout le reste de l'exercice). N'oubliez pas de tester la fonction dans le programme principal.
+
+    3.Calcul du Total du stock
+        Votre supermarché préféré souhaite connaître la valeur de son stock. Écrivez une fonction récursive qui prend le tableau de produits et renvoie le montant total du stock (on ne prendra en compte les promotions ici). N'oubliez pas de tester la fonction dans le programme principal.
+
+    4.Recherche de Produit avec Recommandation
+        Votre application de gestion de supermarché souhaite inclure une fonctionnalité de recommandation. Écrivez une fonction de recherche qui prend en entrée un code de produit et renvoie le produit correspondant dans le stock. Si le produit est introuvable, la fonction doit renvoyer une recommandation pour un produit populaire (Celui que vous voulez mais qui est dans le stock). N'oubliez pas de tester la fonction dans le programme principal.
+
+    5.Sélection de Produit: Trouver le Produit le Plus Cher ou le Moins Cher
+        Imaginez que vous travaillez sur une fonctionnalité de comparaison des prix dans votre application de gestion de supermarché. Écrivez une fonction qui, selon le choix de l'utilisateur, renvoie soit le produit le moins cher, soit le produit le plus cher dans le stock de produits. N'oubliez pas de tester la fonction dans le programme principal.
+
+    6.Algorithme de Tri: Tri par Prix Croissant
+        Votre supermarché souhaite afficher les produits sur son site Web dans l'ordre croissant des prix. Implémentez un algorithme de tri pour trier le stock de produits par prix croissant. N'oubliez pas de tester la fonction dans le programme principal.
+
+Partie 2: Utilisation d'une Liste Chaînée
+
+Dans cette partie, votre supermarché fait appel à vous pour mettre en place un nouveau concept, le drive. Les gens peuvent remplir leur panier en ligne, le payer puis venir le chercher en magasin sans avoir à passer du temps à l'intérieur du magasin (merci la société de consommation d'avoir inventé ce concept).
+
+    1.Définition d'une Liste de Produits et Fonction d'Ajout au Panier:
+        Définissez une liste de produits qui représentera le panier d'un client.De plus, écrivez une fonction permettant d'ajouter un produit dans le panier d'un consommateur, on demandera toutes les infos du produit dans la fonction. N'oubliez pas de tester la fonction d'ajout dans le programme principal en créant le panier d'un consommateur.
+	
+    2. Fonction de remplissage d'un panier
+       On va maintenant implémentez la fonctionnalité de remplissage d'un panier. Ecrivez une fonction qui parcourt le stock du supermarché (partie 1) et qui pour chaque produit demande au client quelle quantité il en veut (vérifier qu'il y en a assez dans le stock) et ajoute la quantite correspondante au panier.
+       
+    3.Algorithmes Récursifs avec Liste Chaînée: Calcul du Total du Panier
+        Pour pouvoir finaliser son cocept de drive, le supermarché veut que les clients puissent payer en ligne. Adaptez la fonction récursive de la partie 1 pour calculer le montant total du panier d'un consommateur en utilisant une liste chaînée (on ne prend toujours pas en compte les promotions). N'oubliez pas de tester la fonction dans le programme principal.
+
+    4.Algorithme de Recherche dans une Liste Chaînée: Recherche par Code dans le Panier
+       Le supermarché veut savoir si un produit appartient au panier d'un certain client. Adaptez la fonction de recherche pour travailler avec une liste chaînée représentant le panier d'un consommateur, on cherchera avec le code de l'article. N'oubliez pas de tester la fonction dans le programme principal.
+
+    5.Gestion des Promotions: Appliquer une Réduction de Prix dans le Panier
+       Le supermarché propose régulièrement des promotions et veut que son programme applique directement les promotions en ligne.  Écrivez une fonction pour appliquer une réduction de prix de 10% à tous les produits en promotion dans le panier, puis n'oublier pas de dire que le produit n'est plus en promotion pour ne pas réappliquer la promotion. N'oubliez pas de tester la fonction dans le programme principal en recalculant le prix après promotion.
+    
+    6.Affichage du Panier
+	Le client aimerait bien voir son panier avant de le payer, écrivez une procédure permettant au client de visualiser son panier.
+
+NB:N'oubliez pas de libérer l'espace mémoire pour éviter de potentiels problèmes.
