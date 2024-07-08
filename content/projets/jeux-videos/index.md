@@ -17,4 +17,4 @@ Si tu souhaites contribuer à un projet, n'hésite pas à nous contacter sur le 
 
 Si tu souhaites débuter dans le développement de jeux vidéoes, nous avons un [parcours de formation](/tutoriels/jeux-videos) qui te permettra d'acquérir les bases dans ce domain.
 
-{{< article link="/presentations/tuto-git-2022/" >}}
+{{< article link="/presentations/tuto-git-2022/" />}}

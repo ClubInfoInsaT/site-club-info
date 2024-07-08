@@ -63,4 +63,4 @@ Sécurité : Des mots de passe solides protégés pour vous, des outils plus sé
 ### Ecologie
 
 Voir la [page de la semaine climat énergie](../conf-sce/#-des-outils-utilitaires-qui-sinvestissent-dans-la-réduction-de-leur-impact) qui détaille déjà tout ça 😊
-{{< article link="/presentations/conf-sce/" >}}
+{{< article link="/presentations/conf-sce/" />}}

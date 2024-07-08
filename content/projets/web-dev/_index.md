@@ -16,6 +16,6 @@ Si tu souhaites contribuer à un projet, n'hésite pas à nous contacter sur le 
 
 Si tu souhaites débuter dans le développement web, nous avons un [parcours de formation](/tutoriels/web-dev) qui te permettra d'acquérir les bases du développement web.
 
-{{< article link="/~leban/test-site/courses/" >}}
+{{< article link="/~leban/test-site/courses/" />}}
 
 ## Nos projets

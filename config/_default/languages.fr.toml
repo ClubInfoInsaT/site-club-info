@@ -2,16 +2,17 @@ displayName  = "FR"
 isoCode      = "fr"
 languageCode = "fr"
 languageName = "French"
-rtl          = false
 weight       = 1
 
+[params]
 description   = "Le Club Info est un club étudiant de l'INSA Toulouse qui a pour but de promouvoir l'informatique et les sciences du numérique auprès des étudiants de l'INSA Toulouse."
 logo          = "images/logo.png"
 secondaryLogo = "images/logo.png"
 title         = "Club Info INSA Toulouse"
-# copyright = "Copy, _right?_ :thinking_face:"
-
-dateFormat = "2 January 2006"
+dateFormat    = "2 January 2006"
+rtl           = false
+displayname   = "FR"
+isocode       = "fr"
 
 [author]
     bio = ""
