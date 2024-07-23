@@ -1,0 +1,10 @@
+{
+  "name": "Eléazar Zoubga",
+  "image": "images/people/Eleazar.jpg",
+  "role": "head-member",
+  "position": "Mainteneur du site",
+  "social": [
+    { "linkedin": "https://fr.linkedin.com/in/wend-yam-eleazar-zoubga" },
+    { "github": "https://github.com/Eleazar-ZOUBGA" }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+    "name": "Thomas Chourret",
+    "image": "images/people/Thomas.jpg",
+    "role": "head-member",
+    "position": "Responsable Roots",
+    "social": [
+      { "linkedin": "https://www.linkedin.com/in/thomas-chourret-2b3a3a1aa/" },
+      { "github": "https://github.com/ThomasChourret" }
+    ]
+  }

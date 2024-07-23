@@ -21,6 +21,8 @@ Vous pouvez retrouver les dates des prochains tutorats dans notre [serveur Disco
 #### Les étudiants
 
 Enoncé: [1A_Exercice_Etudiant_Ada.zip](/zip/1A_Exercice_Etudiant_Ada.zip) <br />
+        [Exo_1A_Etudiants.pdf](/pdf/Exo_1A_Etudiants.pdf)<br/>
+        [Exo_1A_JO_de_Paris.pdf](/pdf/Exo_1A_JO_de_Paris.pdf)<br/>
 Corrigé: [1A_Exercice_Etudiant_Ada_Correction.zip](/zip/1A_Exercice_Etudiant_Ada_Correction.zip)
 
 ## 2eme année
@@ -30,4 +32,10 @@ Corrigé: [1A_Exercice_Etudiant_Ada_Correction.zip](/zip/1A_Exercice_Etudiant_Ad
 #### Le supermarché
 
 Enoncé: [2A_Exercice_Supermarche.txt](/txt/2A_Exercice_Supermarche.txt) <br />
+        [Exo_2A_Supermarche-1.pdf](/pdf/Exo_2A_Supermarche-1.pdf)<br/>
+        [Exo_2A_Taylor_Swift.pdf](/pdf/Exo_2A_Taylor_Swift.pdf)<br/>
 Corrigé: [2A_Exercice_Supermarche_Correction.txt](/txt/2A_Exercice_Supermarche_Correction.txt)
+
+### Unix
+
+Enoncé: [Exo_2A_Unix.pdf](/pdf/Exo_2A_Unix.pdf) <br />
