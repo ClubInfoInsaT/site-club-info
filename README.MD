@@ -74,7 +74,7 @@ hugo new parcours-formation/le-titre-du-parcours-de-formation-sans-espace
 </details>
 
 <details>
-<summary>Ajouter une article sur un projet</summary>
+<summary>Ajouter un article sur un projet</summary>
 
 Dans un terminal, se placer dans le dossier du site et lancer la commande suivante :
 

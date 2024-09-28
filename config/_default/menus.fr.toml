@@ -21,8 +21,8 @@
     weight  = 11
 
 [[main]]
-    name    = "Présentations"
-    pageRef = "presentations"
+    name    = "Articles"
+    pageRef = "articles"
     weight  = 20
 
 [[main]]
@@ -31,24 +31,18 @@
     weight  = 30
 
 [[main]]
-    name    = "Parcours développement web"
-    pageRef = "parcours-formation/developpement-web"
-    parent  = "Formations et Tutorats"
-
-[[main]]
     name    = "Parcours Jeu vidéo"
     pageRef = "parcours-formation/jeu-vidéo"
     parent  = "Formations et Tutorats"
 
 [[main]]
-    name    = "Parcours algorithmie"
-    pageRef = "parcours-formation/algorithmie"
-    parent  = "Formations et Tutorats"
-
-
-[[main]]
     name    = "Parcours cybersécurité"
     pageRef = "parcours-formation/cybersécurité"
+    parent  = "Formations et Tutorats"
+
+[[main]]
+    name    = "Formation LaTex"
+    pageRef = "parcours-formation/formation-LaTex"
     parent  = "Formations et Tutorats"
 
 [[main]]
@@ -75,6 +69,11 @@
     name   = "WikiEtud"
     url    = "https://wiki.etud.insa-toulouse.fr/"
     weight = 20
+
+[[subnavigation]]
+    name   = "Voir l'IGS"
+    url    = "https://igs.insat.fr/"
+    weight = 15
 
 
     # -- Footer Menu --
