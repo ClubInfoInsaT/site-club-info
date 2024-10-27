@@ -1,13 +1,8 @@
 {
-    "name": "Jason",
+    "name": "Jason Bourg",
     "image": "images/people/no-pic.png",
     "role": "bureau-member",
     "position": "Sécrétaire",
-    "social": [
-      {
-        "linkedin": "https://www.linkedin.com/in/"
-      }
-    ],
     "ranking": 4
   }
   
