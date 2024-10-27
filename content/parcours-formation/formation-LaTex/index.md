@@ -31,9 +31,9 @@ En utilisant LaTeX, vous bénéficierez d'une mise en page soignée sans avoir �
 
 Pour bien débuter avec LaTeX, nous mettons à disposition plusieurs ressources utiles :
 
-- [Template LaTeX pour débutants](#) : Un modèle de document LaTeX pour commencer facilement.
-- [Slides de la formation](#) : Les supports utilisés durant la formation pour vous accompagner.
-- [Template de rapport INSA](#) : Un modèle de rapport conforme aux standards de l'INSA, utilisable de la première année jusqu'à la soutenance de fin d'études.
+- [Template LaTeX pour débutants](https://github.com/ClubInfoInsaT/formation-latex/blob/main/support_formation_latex.pdf) : Un modèle de document LaTeX pour commencer facilement.
+- [Slides de la formation](https://github.com/ClubInfoInsaT/formation-latex/support_) : Les supports utilisés durant la formation pour vous accompagner.
+- [Template de rapport INSA](https://clubinfo.insat.fr/projets/latex/) : Un modèle de rapport conforme aux standards de l'INSA, utilisable de la première année jusqu'à la soutenance de fin d'études.
 
 ## Comment participer ?
 

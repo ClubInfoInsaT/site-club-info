@@ -7,6 +7,4 @@ tags: ["Projets"]
 #  -
 ---
 
-{{<alert>}}
-Si tu souhaites contribuer à un projet, n'hésite pas à nous contacter sur le [serveur Discord](https://discord.gg/6qZ2c7J) !
-{{</alert>}}
+Si tu souhaites contribuer à un projet, n'hésite pas à nous contacter sur le [serveur Discord](https://discord.gg/9G8cWyK) !

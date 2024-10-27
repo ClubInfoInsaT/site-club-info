@@ -7,10 +7,6 @@ authors:
   - Baptiste
 ---
 
-{{<alert>}}
-Si tu souhaites contribuer à un projet, n'hésite pas à nous contacter sur le [serveur Discord](https://discord.gg/6qZ2c7J) !
-{{</alert>}}
-
 # Le Site de l'Amicale
 
 Le site de l'Amicale a été lancé en juillet 2023 après un développement qui a débuté en octobre 2022. Ce projet, conçu pour être maintenable à long terme, a été développé principalement en **PHP** avec un minimum de librairies externes. L'objectif est de fournir un outil efficace pour la gestion de l'Amicale et de ses activités tout en assurant la pérennité du code.
@@ -32,3 +28,5 @@ Bien que le site soit actuellement en **close source**, nous sommes toujours à 
 Pour participer ou obtenir plus d'informations, vous pouvez contacter **Baptiste Rébillard**, responsable du projet, via notre serveur Discord.
 
 Rejoignez-nous et aidez-nous à faire évoluer cet outil essentiel pour la communauté étudiante !
+
+Si tu souhaites contribuer à un projet, n'hésite pas à nous contacter sur le [serveur Discord](https://discord.gg/9G8cWyK) !
