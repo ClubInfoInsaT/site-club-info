@@ -51,11 +51,6 @@
     parent  = "Formations et Tutorats"
 
 [[main]]
-    name    = "SCE"
-    pageRef = "semaine-climat-energie"
-    weight  = 30
-
-[[main]]
     name    = "IGS"
     pageRef = "igs"
     weight  = 30
@@ -63,7 +58,6 @@
 [[main]]
     name    = "Documents et Status"
     pageRef = "statuts"
-    weight  = 30
 
 [[subnavigation]]
     name   = "Cod'INSA"
