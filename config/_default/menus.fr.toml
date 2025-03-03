@@ -57,7 +57,7 @@
 
 [[main]]
     name    = "IGS"
-    pageRef = "/igs/"
+    pageRef = "igs"
     weight  = 30
 
 [[subnavigation]]

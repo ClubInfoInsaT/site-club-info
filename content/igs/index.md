@@ -4,10 +4,19 @@ date: 2024-09-09T20:51:39+02:00
 draft: false
 ---
 
+
+
+
 L’IGS (INSA Game Show) est un évènement autour du jeu vidéo organisé par le Club Info. Anciennement organisé par le club INSA Gaming ayant désormais fusionné avec le Club Info, l’évènement a disparu avec le confinement en 2020. L’évènement se déroule historiquement dans le RU de l’INSA, une salle bien connue des étudiants qui jouent à domicile.
 
 Depuis l’année dernière, cet évènement a revu le jour. Au programme de l’IGS : des tournois sur différents jeux vidéo, des stands de démonstration de jeux indépendants, des jeux en libre accès et aussi une buvette. Compétiteur dans l’âme, joueur du dimanche ou bien juste curieux, cet évènement est fait pour vous. L’IGS est de loin l’évènement le plus convivial et avec la meilleure ambiance de tous les évènements de l’année.
 
+## IGS 2024-2025
+Sur le week-end du 8 et 9 mars. *Deadline d'inscription* : 5 mars !!
+
+> ⚠️ **Les inscriptions et infos sont sur [https://igs.insat.fr](https://igs.insat.fr) !**  
+
+## IGS 2023-2024
 Grâce à une équipe hyper motivée et sympa, l'organisation de l'INSA Game Show l'année dernière a été un jeu d'enfant
 
 ![Bureau IGS 2023](images/bureau_igs.JPG)
@@ -25,8 +34,3 @@ Voici un aperçu de l'IGS 2023 :
 ![image 2](images/image2.JPG)
 
 ![image 3](images/image3.JPG)
-
-### Inscription à la newsletter
-
-Pour ne rien rater et être les premiers informés, inscrivez-vous à notre newsletter IGS juste ici : [https://forms.gle/NoUBMF3MAfMQmprr8](https://forms.gle/NoUBMF3MAfMQmprr8).  
-*(Promis, on ne vous spammera pas de mails comme toutes les newsletters !)*
