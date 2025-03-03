@@ -60,6 +60,11 @@
     pageRef = "igs"
     weight  = 30
 
+[[main]]
+    name    = "Documents et Status"
+    pageRef = "statuts"
+    weight  = 30
+
 [[subnavigation]]
     name   = "Cod'INSA"
     url    = "https://codinsa.org/"
