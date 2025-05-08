@@ -9,7 +9,7 @@ authors:
 
 # Le Site de l'Amicale
 
-Le site de l'Amicale a été lancé en juillet 2023 après un développement qui a débuté en octobre 2022. Ce projet, conçu pour être maintenable à long terme, a été développé principalement en **PHP** avec un minimum de librairies externes. L'objectif est de fournir un outil efficace pour la gestion de l'Amicale et de ses activités tout en assurant la pérennité du code.
+Le site de l'Amicale a été lancé en juillet 2024 après un développement qui a débuté en octobre 2022. Ce projet, conçu pour être maintenable à long terme, a été développé principalement en **PHP** avec un minimum de librairies externes. L'objectif est de fournir un outil efficace pour la gestion de l'Amicale et de ses activités tout en assurant la pérennité du code.
 
 ## Fonctionnalités du Site
 
