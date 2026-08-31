@@ -1,0 +1,16 @@
+{
+    "name": "Clément Duran",
+    "image": "images/people/Clément.png",
+    "bio": "Président du club 2025-2027 et Root étudiant",
+    "role": "bureau-member",
+    "position": "Président",
+    "social": [
+        {
+            "linkedin": "https://linkedin.com/in/clement-duran/"
+        },
+        {
+            "github": "https://github.com/picass02005"
+        }
+    ],
+    "ranking": 1
+}

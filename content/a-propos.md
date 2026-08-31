@@ -8,7 +8,7 @@ Le Club Info est un club étudiant de l'INSA Toulouse qui a pour but de promouvo
 
 ## Nos activités
 
-Le Club Info organise des événements tout au long de l'année, comme des conférences, des ateliers, des formations, des concours, des soirées CodinGame, etc.
+Le Club Info organise des événements tout au long de l'année, comme des conférences, des ateliers, des formations, des concours, des tutorats, etc.
 
 ## Sponsoring
 

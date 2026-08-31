@@ -1,0 +1,10 @@
+{
+  "name": "Paul David",
+  "image": "images/people/Paul-David.jpg",
+  "role": "bureau-member",
+  "position": "Trésorier",
+  "social": [
+    { "linkedin": "https://www.linkedin.com/in/paul-david-48aa99318/" }
+  ],
+  "ranking": 2
+}
