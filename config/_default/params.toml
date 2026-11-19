@@ -12,7 +12,7 @@ defaultAppearance    = "dark"     # valid options: light or dark
 enableCodeCopy = true
 enableSearch   = true
 
-mainSections = ["projets"]
+mainSections = ["projets", "articles"]
 # robots = ""
 
 disableImageOptimization = false
