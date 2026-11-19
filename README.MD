@@ -29,6 +29,12 @@ Ce répertoire contient les sources du site du Club Info disponible à cette adr
    > Vous pouvez alors tester le site en local.
    > A chaque modification du code, le serveur se mettra à jour automatiquement.
 
+   Ou en utilisant docker (si c'est compliqué d'avoir la bonne version):
+
+   ```bash
+   docker run -it --rm -v "$(pwd):/project" -p 1313:1313 ghcr.io/gohugoio/hugo:v0.163.3 server -p 1313 --bind ""
+   ```
+
 4. Pour générer le site statique
    ```bash
    hugo --gc --minify
